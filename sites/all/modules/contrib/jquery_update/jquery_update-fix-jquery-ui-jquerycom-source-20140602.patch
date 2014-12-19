@@ -1,0 +1,30 @@
+From eb771b83368454b87db4a23fef7485a09251a936 Mon Sep 17 00:00:00 2001
+From: Jason Vines <jasonevines@gmail.com>
+Date: Mon, 2 Jun 2014 17:20:33 -0400
+Subject: [PATCH] If code.jquery.com was selected as the CDN, jQuery UI
+ wouldn't use it. This fixes the problem.
+
+---
+ jquery_update.module | 6 ++++++
+ 1 file changed, 6 insertions(+)
+
+diff --git a/jquery_update.module b/jquery_update.module
+index 25523a5..029d96c 100644
+--- a/jquery_update.module
++++ b/jquery_update.module
+@@ -415,6 +415,12 @@ function jquery_update_jqueryui_replace(&$javascript, $cdn, $path, $min) {
+       jquery_update_jqueryui_backup($javascript, $path, $min);
+       break;
+ 
++    case 'jquery':
++      $cdn = 'http://code.jquery.com/ui/1.10.2/jquery-ui' . $min . '.js';
++      jquery_update_jqueryui_cdn($cdn, $javascript, $path, $min, $names);
++      jquery_update_jqueryui_backup($javascript, $path, $min);
++      break;
++
+     case 'none':
+       jquery_update_jqueryui_local($javascript, $path, $min, $names);
+       break;
+-- 
+1.9.1
+
