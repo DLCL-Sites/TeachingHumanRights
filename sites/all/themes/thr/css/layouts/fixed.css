@@ -67,16 +67,17 @@
   /* Move all the children of #main down to make room. */
   padding-top: 3em;
   position: relative;
+  background: #FAFAFA;
 }
 #navigation {
   /* Move the navbar up inside #main's padding. */
-  padding-left: 25%;
+  padding-left: 28%;
   text-indent: 25px;
   position: absolute;
   top: 0;
   height: 3em;
   /*width: 960px;*/
-  width: 1050px;
+  width: 1008px;
 }
 
 /**
@@ -147,4 +148,8 @@
   width: 176px;
   margin-left: 784px;
   margin-right: -980px;
+}
+
+#footer {
+  background: #FAFAFA;
 }

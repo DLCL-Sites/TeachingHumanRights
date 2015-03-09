@@ -826,12 +826,160 @@ div.blurb {
   text-align: justify;
 }
 
-.views-row.views-row-1.views-row-odd.views-row-first.newsitem {
+/*.views-row.views-row-1.views-row-odd.views-row-first.newsitem {
   width: 1000px;
   margin: auto;
+  padding-bottom: 50px;
 }
 
 .views-row.views-row-2.views-row-even.views-row-last.newsitem {
   width: 1000px;
   margin: auto;
+  padding-bottom: 50px;
+}
+
+.views-row.views-row-2.views-row-even.newsitem {
+  width: 1000px;
+  margin: auto;
+  padding-bottom: 50px;
+}
+
+.views-row.views-row-3.views-row-odd.newsitem {
+  width: 1000px;
+  margin: auto;
+  padding-bottom: 50px;
+}
+
+.views-row.views-row-4.views-row-even.newsitem {
+  width: 1000px;
+  margin: auto;
+  padding-bottom: 50px;
+}
+
+.views-row.views-row-5.views-row-odd.views-row-last.newsitem {
+  width: 1000px;
+  margin: auto;
+  padding-bottom: 50px;
+} */
+
+.view-main-news-feed {
+  background: #EAEAEA;
+  padding-top: 25px;
+}
+
+.view-main-news-feed .views-row {
+  background: #FFF;
+}
+
+.views-row img {
+  float: left;
+  border: solid 1px;
+  margin-left: 5px;
+}
+
+.views-row .field-content {
+  /*padding-left: 23%;*/
+}
+
+.newsitem {
+  width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 25px;
+  padding-bottom: 50px;
+  /*border: solid 1px;*/
+}
+
+.newsitem .views-field-title {
+  margin-left: 43%;
+  font-size: larger;
+  padding-bottom: 5px;
+  padding-top: 5px;
+}
+
+.newsitem .views-field-body {
+  padding-left: 23%;
+}
+
+.newsitem .views-field-view-node {
+  padding-left: 23%;
+}
+
+#about-us {
+    font-family: Sans-serif;
+    text-align: justify;
+}
+
+
+#about-us-top {
+    background: #FFFFFF;
+}
+
+#about-us-bottom {
+    background: #EAEAEA;
+}
+
+#about-us-pic {
+    display: block;
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#about-us-bottom h1 {
+  text-align: center;
+}
+
+#about-us p {
+  width: 600px;
+  font-size: larger;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.theme .views-field-name {
+ /* background: #EAEAEA;
+  border: solid 1px;
+  text-align: center;
+  min-width: 300px;
+  padding-top: 10px;
+  padding-bottom: 10px;*/
+  position: absolute;
+  z-index: 1;
+  background: #EAEAEA;
+  margin-top: 5px;
+  margin-left: 5px;
+}
+
+.theme td {
+  /*background: #EAEAEA;
+  border: solid 1px;*/
+  min-width: 220px;
+  min-height: 220px;
+  padding: 10px;
+}
+
+.theme img {
+  position:relative;
+  width: 100%;
+  border-radius: 2%;
+}
+
+.theme table {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#page-title {
+  text-align: center;
+}
+
+.theme a {
+  color: black;
+}
+
+.breadcrumb a {
+  display: none;
 }
