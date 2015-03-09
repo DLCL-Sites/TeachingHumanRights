@@ -983,3 +983,78 @@ div.blurb {
 .breadcrumb a {
   display: none;
 }
+
+.view-regions table {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.view-regions td {
+  /*background: #EAEAEA;
+  border: solid 1px;*/
+  padding: 25px;
+}
+
+.view-regions h4 {
+  text-align: center;
+  font-size: larger;
+}
+
+.view-regions a {
+  color: #4A90E2;
+}
+
+#start-here {
+    background: #FFF;
+    margin-left: auto;
+    margin-right: auto;
+    width: 800px;
+    padding-bottom: 10px;
+}
+
+#syllabi {
+    background: #FFF;
+    float: left;
+    width: 50%;
+}
+
+#student-work {
+    background: #FFF;
+    float: left;
+    width: 50%;
+}
+
+#for-teachers-button {
+    background: #4A90E2;
+    border-radius: 5%;
+    width: 200px;
+    margin-left: 25px;
+    border-radius: 6px;
+    border: 1px solid #EAEAEA;
+    font-weight: bold;
+    padding: 6px 24px;
+    text-decoration: none;
+}
+
+#for-teachers-class-spaces {
+  background: #FFF;
+  margin-left: auto;
+  margin-right: auto;
+  width: 800px;
+  padding-bottom: 10px;
+}
+
+#start-here h1, p, h2 {
+  margin-left: 25px;
+  margin-top: 25px;
+}
+
+#start-here a {
+  color: #4A90E2;
+  text-decoration: underline;
+}
+
+#for-teachers-class-spaces h1, p {
+  margin-left: 25px;
+  margin-top: 25px;
+}

@@ -71,15 +71,24 @@
 }
 #navigation {
   /* Move the navbar up inside #main's padding. */
-  padding-left: 28%;
+  /*padding-left: 28%;*/
   text-indent: 25px;
   position: absolute;
   top: 0;
   height: 3em;
   /*width: 960px;*/
-  width: 1008px;
+  /*width: 1008px;*/
+  display: inline;
+  width: 1400px;
 }
 
+#navigation li {
+  display: inline-block;
+}
+
+#navigation ul {
+  text-align: center;
+}
 /**
  * The layout when there is only one sidebar, the left one.
  */
