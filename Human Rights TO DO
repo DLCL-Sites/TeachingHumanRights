@@ -1,0 +1,7 @@
+Human Rights TO DO
+
+** Theming **
+Switch from CSS to SASS
+Switch from Fixed to Responsive
+Modularize components
+Remove Font-Your-Face, use Web fonts in SASS instead
