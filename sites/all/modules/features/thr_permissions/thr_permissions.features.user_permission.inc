@@ -128,13 +128,14 @@ function thr_permissions_user_default_permissions() {
     'module' => 'devel',
   );
 
-  // Exported permission: 'access overlay'.
-  $permissions['access overlay'] = array(
-    'name' => 'access overlay',
+  // Exported permission: 'access notify'.
+  $permissions['access notify'] = array(
+    'name' => 'access notify',
     'roles' => array(
       'administrator' => 'administrator',
+      'authenticated user' => 'authenticated user',
     ),
-    'module' => 'overlay',
+    'module' => 'notify',
   );
 
   // Exported permission: 'access own authorizations'.
@@ -424,6 +425,25 @@ function thr_permissions_user_default_permissions() {
       'administrator' => 'administrator',
     ),
     'module' => 'node',
+  );
+
+  // Exported permission: 'administer notify'.
+  $permissions['administer notify'] = array(
+    'name' => 'administer notify',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'notify',
+  );
+
+  // Exported permission: 'administer notify queue'.
+  $permissions['administer notify queue'] = array(
+    'name' => 'administer notify queue',
+    'roles' => array(
+      'Content Manager' => 'Content Manager',
+      'administrator' => 'administrator',
+    ),
+    'module' => 'notify',
   );
 
   // Exported permission: 'administer oauth'.
@@ -1748,6 +1768,20 @@ function thr_permissions_user_default_permissions() {
       'authenticated user' => 'authenticated user',
     ),
     'module' => 'search',
+  );
+
+  // Exported permission: 'use hybridauth'.
+  $permissions['use hybridauth'] = array(
+    'name' => 'use hybridauth',
+    'roles' => array(
+      'Content Manager' => 'Content Manager',
+      'Instructor' => 'Instructor',
+      'Student' => 'Student',
+      'administrator' => 'administrator',
+      'anonymous user' => 'anonymous user',
+      'authenticated user' => 'authenticated user',
+    ),
+    'module' => 'hybridauth',
   );
 
   // Exported permission: 'use ipe with page manager'.
