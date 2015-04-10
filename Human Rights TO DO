@@ -5,3 +5,9 @@ Switch from CSS to SASS
 Switch from Fixed to Responsive
 Modularize components
 Remove Font-Your-Face, use Web fonts in SASS instead
+Add margins to left and right; currently content is flush with side of browser
+
+** Functionality **
+Hybridauth configuration and testing (needs API keys, etc.)
+Notifications - installed, be sure to disable old rules
+
