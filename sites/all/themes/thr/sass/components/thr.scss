@@ -1,0 +1,299 @@
+#block-block-6 {
+  background: #f7f7f7;
+  padding-left: 80px;
+  padding-right: 80px;
+  padding-bottom: 90px;
+  padding-top: 25px;
+
+  }
+
+#navigation {
+  background: #77AAEE;
+  /*width: 100%;*/
+}
+
+#navigation a {
+  color: white;
+}
+
+#block-block-7 {
+  background: #EAEAEA;
+  padding-left: 80px;
+  padding-right: 80px;
+  padding-bottom: 90px;
+  padding-top: 25px;
+}
+
+#views_slideshow_cycle_main_featured_slider-block {
+  background: #EAEAEA;
+}
+
+#views_slideshow_cycle_main_featured_slider-block div img {
+  margin: auto;
+  display: block;
+}
+
+#header {
+  background: #4A90E2;
+}
+
+#header a {
+  color: white;
+  text-decoration: none;
+}
+
+#view-content {
+  background: #EAEAEA;
+}
+
+.views-slideshow-cycle-main-frame.views_slideshow_cycle_teaser_section {
+  margin: auto;
+}
+
+img.thumb {
+  width: 20%;
+  float: right;
+  padding-left: 10px;
+}
+
+div.blurb {
+  display: block;
+}
+
+.blurb span {
+  display: block;
+  text-align: justify;
+}
+
+/*.views-row.views-row-1.views-row-odd.views-row-first.newsitem {
+  width: 1000px;
+  margin: auto;
+  padding-bottom: 50px;
+}
+
+.views-row.views-row-2.views-row-even.views-row-last.newsitem {
+  width: 1000px;
+  margin: auto;
+  padding-bottom: 50px;
+}
+
+.views-row.views-row-2.views-row-even.newsitem {
+  width: 1000px;
+  margin: auto;
+  padding-bottom: 50px;
+}
+
+.views-row.views-row-3.views-row-odd.newsitem {
+  width: 1000px;
+  margin: auto;
+  padding-bottom: 50px;
+}
+
+.views-row.views-row-4.views-row-even.newsitem {
+  width: 1000px;
+  margin: auto;
+  padding-bottom: 50px;
+}
+
+.views-row.views-row-5.views-row-odd.views-row-last.newsitem {
+  width: 1000px;
+  margin: auto;
+  padding-bottom: 50px;
+} */
+
+.view-main-news-feed {
+  background: #EAEAEA;
+  padding-top: 25px;
+}
+
+.view-main-news-feed .views-row {
+  background: #FFF;
+}
+
+.views-row img {
+  float: left;
+  border: solid 1px;
+  margin-left: 5px;
+}
+
+.views-row .field-content {
+  /*padding-left: 23%;*/
+}
+
+.newsitem {
+  width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 25px;
+  padding-bottom: 50px;
+  /*border: solid 1px;*/
+}
+
+.newsitem .views-field-title {
+  margin-left: 43%;
+  font-size: larger;
+  padding-bottom: 5px;
+  padding-top: 5px;
+}
+
+.newsitem .views-field-body {
+  padding-left: 23%;
+}
+
+.newsitem .views-field-view-node {
+  padding-left: 23%;
+}
+
+#about-us {
+    font-family: Sans-serif;
+    text-align: justify;
+}
+
+
+#about-us-top {
+    background: #FFFFFF;
+}
+
+#about-us-bottom {
+    background: #EAEAEA;
+}
+
+#about-us-pic {
+    display: block;
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#about-us-bottom h1 {
+  text-align: center;
+}
+
+#about-us p {
+  width: 600px;
+  font-size: larger;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.theme .views-field-name {
+ /* background: #EAEAEA;
+  border: solid 1px;
+  text-align: center;
+  min-width: 300px;
+  padding-top: 10px;
+  padding-bottom: 10px;*/
+  position: absolute;
+  z-index: 1;
+  background: #EAEAEA;
+  margin-top: 5px;
+  margin-left: 5px;
+}
+
+.theme td {
+  /*background: #EAEAEA;
+  border: solid 1px;*/
+  min-width: 220px;
+  min-height: 220px;
+  padding: 10px;
+}
+
+.theme img {
+  position:relative;
+  width: 100%;
+  border-radius: 2%;
+}
+
+.theme table {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#page-title {
+  text-align: center;
+}
+
+.theme a {
+  color: black;
+}
+
+.breadcrumb a {
+  display: none;
+}
+
+.view-regions table {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.view-regions td {
+  /*background: #EAEAEA;
+  border: solid 1px;*/
+  padding: 25px;
+}
+
+.view-regions h4 {
+  text-align: center;
+  font-size: larger;
+}
+
+.view-regions a {
+  color: #4A90E2;
+}
+
+#start-here {
+    background: #FFF;
+    margin-left: auto;
+    margin-right: auto;
+    width: 800px;
+    padding-bottom: 10px;
+}
+
+#syllabi {
+    background: #FFF;
+    float: left;
+    width: 50%;
+}
+
+#student-work {
+    background: #FFF;
+    float: left;
+    width: 50%;
+}
+
+#for-teachers-button {
+    background: #4A90E2;
+    border-radius: 5%;
+    width: 200px;
+    margin-left: 25px;
+    border-radius: 6px;
+    border: 1px solid #EAEAEA;
+    font-weight: bold;
+    padding: 6px 24px;
+    text-decoration: none;
+}
+
+#for-teachers-class-spaces {
+  background: #FFF;
+  margin-left: auto;
+  margin-right: auto;
+  width: 800px;
+  padding-bottom: 10px;
+}
+
+#start-here h1, p, h2 {
+  margin-left: 25px;
+  margin-top: 25px;
+}
+
+#start-here a {
+  color: #4A90E2;
+  text-decoration: underline;
+}
+
+#for-teachers-class-spaces h1, p {
+  margin-left: 25px;
+  margin-top: 25px;
+}

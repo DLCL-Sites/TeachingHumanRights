@@ -17,6 +17,10 @@
 
 /* Component (SMACSS module) rules */
 @import "components/misc";
+
+// Not following good SMACSS rules right now...
+@import "components/thr";
+
 // Optionally, add your own components here.
 @import "print";
 
