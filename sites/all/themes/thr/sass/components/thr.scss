@@ -1,3 +1,7 @@
+$bg-color-dark-blue: #77AAEE;
+$bg-color-light-gray: #EAEAEA;
+$a-hover: rgba(133,209,57,1);
+
 #block-block-6 {
   background: #f7f7f7;
   padding-left: 80px;
@@ -8,8 +12,23 @@
   }
 
 #navigation {
-  background: #77AAEE;
+  background: $bg-color-dark-blue;
   /*width: 100%;*/
+  padding-top: 10px;
+  ul.links {
+    display: inline;
+    font-size: larger;
+    li {
+      margin-right: 10px;
+      display: inline;
+      a {
+        text-decoration: none;
+      }
+      a:hover {
+        color: $a-hover;
+      }
+    }
+  }
 }
 
 #navigation a {
@@ -17,7 +36,7 @@
 }
 
 #block-block-7 {
-  background: #EAEAEA;
+  background: $bg-color-light-gray;
   padding-left: 80px;
   padding-right: 80px;
   padding-bottom: 90px;
@@ -25,7 +44,7 @@
 }
 
 #views_slideshow_cycle_main_featured_slider-block {
-  background: #EAEAEA;
+  background: $bg-color-light-gray;
 }
 
 #views_slideshow_cycle_main_featured_slider-block div img {
@@ -43,7 +62,7 @@
 }
 
 #view-content {
-  background: #EAEAEA;
+  background: $bg-color-light-gray;
 }
 
 .views-slideshow-cycle-main-frame.views_slideshow_cycle_teaser_section {
@@ -102,7 +121,7 @@ div.blurb {
 } */
 
 .view-main-news-feed {
-  background: #EAEAEA;
+  background: $bg-color-light-gray;
   padding-top: 25px;
 }
 
@@ -155,7 +174,7 @@ div.blurb {
 }
 
 #about-us-bottom {
-    background: #EAEAEA;
+    background: $bg-color-light-gray;
 }
 
 #about-us-pic {
@@ -179,7 +198,7 @@ div.blurb {
 }
 
 .theme .views-field-name {
- /* background: #EAEAEA;
+ /* background: $bg-color-light-gray;
   border: solid 1px;
   text-align: center;
   min-width: 300px;
@@ -187,13 +206,13 @@ div.blurb {
   padding-bottom: 10px;*/
   position: absolute;
   z-index: 1;
-  background: #EAEAEA;
+  background: $bg-color-light-gray;
   margin-top: 5px;
   margin-left: 5px;
 }
 
 .theme td {
-  /*background: #EAEAEA;
+  /*background: $bg-color-light-gray;
   border: solid 1px;*/
   min-width: 220px;
   min-height: 220px;
@@ -229,7 +248,7 @@ div.blurb {
 }
 
 .view-regions td {
-  /*background: #EAEAEA;
+  /*background: $bg-color-light-gray;
   border: solid 1px;*/
   padding: 25px;
 }
@@ -269,7 +288,7 @@ div.blurb {
     width: 200px;
     margin-left: 25px;
     border-radius: 6px;
-    border: 1px solid #EAEAEA;
+    border: 1px solid $bg-color-light-gray;
     font-weight: bold;
     padding: 6px 24px;
     text-decoration: none;

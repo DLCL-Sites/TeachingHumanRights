@@ -1,4 +1,4 @@
-/* line 1, ../../sass/components/thr.scss */
+/* line 3, ../../sass/components/thr.scss */
 #block-block-6 {
   background: #f7f7f7;
   padding-left: 80px;
@@ -7,18 +7,37 @@
   padding-top: 25px;
 }
 
-/* line 10, ../../sass/components/thr.scss */
+/* line 12, ../../sass/components/thr.scss */
 #navigation {
-  background: #77AAEE;
+  background: #77aaee;
   /*width: 100%;*/
+  padding-top: 10px;
+}
+/* line 16, ../../sass/components/thr.scss */
+#navigation ul.links {
+  display: inline;
+  font-size: larger;
+}
+/* line 19, ../../sass/components/thr.scss */
+#navigation ul.links li {
+  margin-right: 10px;
+  display: inline;
+}
+/* line 22, ../../sass/components/thr.scss */
+#navigation ul.links li a {
+  text-decoration: none;
+}
+/* line 25, ../../sass/components/thr.scss */
+#navigation ul.links li a:hover {
+  color: #85d139;
 }
 
-/* line 15, ../../sass/components/thr.scss */
+/* line 32, ../../sass/components/thr.scss */
 #navigation a {
   color: white;
 }
 
-/* line 19, ../../sass/components/thr.scss */
+/* line 36, ../../sass/components/thr.scss */
 #block-block-7 {
   background: #EAEAEA;
   padding-left: 80px;
@@ -27,51 +46,51 @@
   padding-top: 25px;
 }
 
-/* line 27, ../../sass/components/thr.scss */
+/* line 44, ../../sass/components/thr.scss */
 #views_slideshow_cycle_main_featured_slider-block {
   background: #EAEAEA;
 }
 
-/* line 31, ../../sass/components/thr.scss */
+/* line 48, ../../sass/components/thr.scss */
 #views_slideshow_cycle_main_featured_slider-block div img {
   margin: auto;
   display: block;
 }
 
-/* line 36, ../../sass/components/thr.scss */
+/* line 53, ../../sass/components/thr.scss */
 #header {
   background: #4A90E2;
 }
 
-/* line 40, ../../sass/components/thr.scss */
+/* line 57, ../../sass/components/thr.scss */
 #header a {
   color: white;
   text-decoration: none;
 }
 
-/* line 45, ../../sass/components/thr.scss */
+/* line 62, ../../sass/components/thr.scss */
 #view-content {
   background: #EAEAEA;
 }
 
-/* line 49, ../../sass/components/thr.scss */
+/* line 66, ../../sass/components/thr.scss */
 .views-slideshow-cycle-main-frame.views_slideshow_cycle_teaser_section {
   margin: auto;
 }
 
-/* line 53, ../../sass/components/thr.scss */
+/* line 70, ../../sass/components/thr.scss */
 img.thumb {
   width: 20%;
   float: right;
   padding-left: 10px;
 }
 
-/* line 59, ../../sass/components/thr.scss */
+/* line 76, ../../sass/components/thr.scss */
 div.blurb {
   display: block;
 }
 
-/* line 63, ../../sass/components/thr.scss */
+/* line 80, ../../sass/components/thr.scss */
 .blurb span {
   display: block;
   text-align: justify;
@@ -112,30 +131,30 @@ div.blurb {
   margin: auto;
   padding-bottom: 50px;
 } */
-/* line 104, ../../sass/components/thr.scss */
+/* line 121, ../../sass/components/thr.scss */
 .view-main-news-feed {
   background: #EAEAEA;
   padding-top: 25px;
 }
 
-/* line 109, ../../sass/components/thr.scss */
+/* line 126, ../../sass/components/thr.scss */
 .view-main-news-feed .views-row {
   background: #FFF;
 }
 
-/* line 113, ../../sass/components/thr.scss */
+/* line 130, ../../sass/components/thr.scss */
 .views-row img {
   float: left;
   border: solid 1px;
   margin-left: 5px;
 }
 
-/* line 119, ../../sass/components/thr.scss */
+/* line 136, ../../sass/components/thr.scss */
 .views-row .field-content {
   /*padding-left: 23%;*/
 }
 
-/* line 123, ../../sass/components/thr.scss */
+/* line 140, ../../sass/components/thr.scss */
 .newsitem {
   width: 1000px;
   margin-left: auto;
@@ -145,7 +164,7 @@ div.blurb {
   /*border: solid 1px;*/
 }
 
-/* line 132, ../../sass/components/thr.scss */
+/* line 149, ../../sass/components/thr.scss */
 .newsitem .views-field-title {
   margin-left: 43%;
   font-size: larger;
@@ -153,33 +172,33 @@ div.blurb {
   padding-top: 5px;
 }
 
-/* line 139, ../../sass/components/thr.scss */
+/* line 156, ../../sass/components/thr.scss */
 .newsitem .views-field-body {
   padding-left: 23%;
 }
 
-/* line 143, ../../sass/components/thr.scss */
+/* line 160, ../../sass/components/thr.scss */
 .newsitem .views-field-view-node {
   padding-left: 23%;
 }
 
-/* line 147, ../../sass/components/thr.scss */
+/* line 164, ../../sass/components/thr.scss */
 #about-us {
   font-family: Sans-serif;
   text-align: justify;
 }
 
-/* line 153, ../../sass/components/thr.scss */
+/* line 170, ../../sass/components/thr.scss */
 #about-us-top {
   background: #FFFFFF;
 }
 
-/* line 157, ../../sass/components/thr.scss */
+/* line 174, ../../sass/components/thr.scss */
 #about-us-bottom {
   background: #EAEAEA;
 }
 
-/* line 161, ../../sass/components/thr.scss */
+/* line 178, ../../sass/components/thr.scss */
 #about-us-pic {
   display: block;
   width: 200px;
@@ -189,12 +208,12 @@ div.blurb {
   margin-right: auto;
 }
 
-/* line 170, ../../sass/components/thr.scss */
+/* line 187, ../../sass/components/thr.scss */
 #about-us-bottom h1 {
   text-align: center;
 }
 
-/* line 174, ../../sass/components/thr.scss */
+/* line 191, ../../sass/components/thr.scss */
 #about-us p {
   width: 600px;
   font-size: larger;
@@ -202,7 +221,7 @@ div.blurb {
   margin-right: auto;
 }
 
-/* line 181, ../../sass/components/thr.scss */
+/* line 198, ../../sass/components/thr.scss */
 .theme .views-field-name {
   /* background: #EAEAEA;
    border: solid 1px;
@@ -217,7 +236,7 @@ div.blurb {
   margin-left: 5px;
 }
 
-/* line 195, ../../sass/components/thr.scss */
+/* line 212, ../../sass/components/thr.scss */
 .theme td {
   /*background: #EAEAEA;
   border: solid 1px;*/
@@ -226,59 +245,59 @@ div.blurb {
   padding: 10px;
 }
 
-/* line 203, ../../sass/components/thr.scss */
+/* line 220, ../../sass/components/thr.scss */
 .theme img {
   position: relative;
   width: 100%;
   border-radius: 2%;
 }
 
-/* line 209, ../../sass/components/thr.scss */
+/* line 226, ../../sass/components/thr.scss */
 .theme table {
   margin-left: auto;
   margin-right: auto;
 }
 
-/* line 214, ../../sass/components/thr.scss */
+/* line 231, ../../sass/components/thr.scss */
 #page-title {
   text-align: center;
 }
 
-/* line 218, ../../sass/components/thr.scss */
+/* line 235, ../../sass/components/thr.scss */
 .theme a {
   color: black;
 }
 
-/* line 222, ../../sass/components/thr.scss */
+/* line 239, ../../sass/components/thr.scss */
 .breadcrumb a {
   display: none;
 }
 
-/* line 226, ../../sass/components/thr.scss */
+/* line 243, ../../sass/components/thr.scss */
 .view-regions table {
   margin-left: auto;
   margin-right: auto;
 }
 
-/* line 231, ../../sass/components/thr.scss */
+/* line 248, ../../sass/components/thr.scss */
 .view-regions td {
   /*background: #EAEAEA;
   border: solid 1px;*/
   padding: 25px;
 }
 
-/* line 237, ../../sass/components/thr.scss */
+/* line 254, ../../sass/components/thr.scss */
 .view-regions h4 {
   text-align: center;
   font-size: larger;
 }
 
-/* line 242, ../../sass/components/thr.scss */
+/* line 259, ../../sass/components/thr.scss */
 .view-regions a {
   color: #4A90E2;
 }
 
-/* line 246, ../../sass/components/thr.scss */
+/* line 263, ../../sass/components/thr.scss */
 #start-here {
   background: #FFF;
   margin-left: auto;
@@ -287,21 +306,21 @@ div.blurb {
   padding-bottom: 10px;
 }
 
-/* line 254, ../../sass/components/thr.scss */
+/* line 271, ../../sass/components/thr.scss */
 #syllabi {
   background: #FFF;
   float: left;
   width: 50%;
 }
 
-/* line 260, ../../sass/components/thr.scss */
+/* line 277, ../../sass/components/thr.scss */
 #student-work {
   background: #FFF;
   float: left;
   width: 50%;
 }
 
-/* line 266, ../../sass/components/thr.scss */
+/* line 283, ../../sass/components/thr.scss */
 #for-teachers-button {
   background: #4A90E2;
   border-radius: 5%;
@@ -314,7 +333,7 @@ div.blurb {
   text-decoration: none;
 }
 
-/* line 278, ../../sass/components/thr.scss */
+/* line 295, ../../sass/components/thr.scss */
 #for-teachers-class-spaces {
   background: #FFF;
   margin-left: auto;
@@ -323,19 +342,19 @@ div.blurb {
   padding-bottom: 10px;
 }
 
-/* line 286, ../../sass/components/thr.scss */
+/* line 303, ../../sass/components/thr.scss */
 #start-here h1, p, h2 {
   margin-left: 25px;
   margin-top: 25px;
 }
 
-/* line 291, ../../sass/components/thr.scss */
+/* line 308, ../../sass/components/thr.scss */
 #start-here a {
   color: #4A90E2;
   text-decoration: underline;
 }
 
-/* line 296, ../../sass/components/thr.scss */
+/* line 313, ../../sass/components/thr.scss */
 #for-teachers-class-spaces h1, p {
   margin-left: 25px;
   margin-top: 25px;
