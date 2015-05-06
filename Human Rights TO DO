@@ -2,7 +2,7 @@ Human Rights TO DO
 
 ** Theming **
 Modularize style components (SMACSS)
-Remove Font-Your-Face, use Web fonts in SASS instead
+Use zen-grids for news feed width
 
 ** Functionality **
 Hybridauth configuration and testing (needs API keys, etc.)
@@ -10,3 +10,5 @@ Notifications - installed, be sure to disable old rules
 
 ** Server **
 Create a test instance for sharing changes
+
+Send a help ticket to reset WHM password
