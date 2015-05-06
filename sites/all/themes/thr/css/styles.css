@@ -1703,99 +1703,125 @@ tr.selected td {
   background-image: url('../images/progress.gif?1426179113');
 }
 
-/* line 3, ../sass/components/thr.scss */
-#block-block-6 {
-  background: #f7f7f7;
-  padding-left: 80px;
-  padding-right: 80px;
-  padding-bottom: 90px;
-  padding-top: 25px;
+/* line 14, ../sass/components/thr.scss */
+a {
+  text-decoration: none;
+  color: #1f4c7f;
 }
 
-/* line 12, ../sass/components/thr.scss */
+/* line 18, ../sass/components/thr.scss */
+a:hover {
+  color: #567ca5;
+}
+
+/* line 22, ../sass/components/thr.scss */
 #navigation {
-  background: #77aaee;
+  background: #1f4c7f;
   /*width: 100%;*/
   padding-top: 10px;
 }
-/* line 16, ../sass/components/thr.scss */
+/* line 23, ../sass/components/thr.scss */
+#navigation a {
+  color: white;
+}
+/* line 29, ../sass/components/thr.scss */
 #navigation ul.links {
   display: inline;
   font-size: larger;
 }
-/* line 19, ../sass/components/thr.scss */
+/* line 32, ../sass/components/thr.scss */
 #navigation ul.links li {
   margin-right: 10px;
   display: inline;
 }
-/* line 22, ../sass/components/thr.scss */
+/* line 35, ../sass/components/thr.scss */
 #navigation ul.links li a {
   text-decoration: none;
 }
-/* line 25, ../sass/components/thr.scss */
+/* line 38, ../sass/components/thr.scss */
 #navigation ul.links li a:hover {
-  color: #85d139;
+  color: #1c9924;
 }
 
-/* line 32, ../sass/components/thr.scss */
-#navigation a {
-  color: white;
-}
-
-/* line 36, ../sass/components/thr.scss */
-#block-block-7 {
-  background: #EAEAEA;
+/* line 46, ../sass/components/thr.scss */
+.block {
   padding-left: 80px;
   padding-right: 80px;
   padding-bottom: 90px;
   padding-top: 25px;
 }
 
-/* line 44, ../sass/components/thr.scss */
-#views_slideshow_cycle_main_featured_slider-block {
-  background: #EAEAEA;
+/* line 53, ../sass/components/thr.scss */
+.block-human-rights {
+  background: #e0e0e0;
 }
 
-/* line 48, ../sass/components/thr.scss */
+/* line 57, ../sass/components/thr.scss */
+.block-importance {
+  background: #d1d1d1;
+}
+/* line 59, ../sass/components/thr.scss */
+.block-importance img.thumb {
+  float: left !important;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+/* line 66, ../sass/components/thr.scss */
+#block-twitter-block-1 {
+  padding: 0px;
+}
+
+/* line 70, ../sass/components/thr.scss */
+h2.block-title {
+  word-wrap: normal;
+}
+
+/* line 75, ../sass/components/thr.scss */
+#views_slideshow_cycle_main_featured_slider-block {
+  background: #e0e0e0;
+}
+
+/* line 79, ../sass/components/thr.scss */
 #views_slideshow_cycle_main_featured_slider-block div img {
   margin: auto;
   display: block;
 }
 
-/* line 53, ../sass/components/thr.scss */
+/* line 84, ../sass/components/thr.scss */
 #header {
-  background: #4A90E2;
+  background: #103b6a;
 }
 
-/* line 57, ../sass/components/thr.scss */
+/* line 88, ../sass/components/thr.scss */
 #header a {
   color: white;
   text-decoration: none;
 }
 
-/* line 62, ../sass/components/thr.scss */
+/* line 93, ../sass/components/thr.scss */
 #view-content {
-  background: #EAEAEA;
+  background: #d1d1d1;
 }
 
-/* line 66, ../sass/components/thr.scss */
+/* line 97, ../sass/components/thr.scss */
 .views-slideshow-cycle-main-frame.views_slideshow_cycle_teaser_section {
   margin: auto;
 }
 
-/* line 70, ../sass/components/thr.scss */
+/* line 101, ../sass/components/thr.scss */
 img.thumb {
   width: 20%;
   float: right;
   padding-left: 10px;
 }
 
-/* line 76, ../sass/components/thr.scss */
+/* line 107, ../sass/components/thr.scss */
 div.blurb {
   display: block;
 }
 
-/* line 80, ../sass/components/thr.scss */
+/* line 111, ../sass/components/thr.scss */
 .blurb span {
   display: block;
   text-align: justify;
@@ -1836,30 +1862,30 @@ div.blurb {
   margin: auto;
   padding-bottom: 50px;
 } */
-/* line 121, ../sass/components/thr.scss */
+/* line 152, ../sass/components/thr.scss */
 .view-main-news-feed {
-  background: #EAEAEA;
+  background: #d1d1d1;
   padding-top: 25px;
 }
 
-/* line 126, ../sass/components/thr.scss */
+/* line 157, ../sass/components/thr.scss */
 .view-main-news-feed .views-row {
   background: #FFF;
 }
 
-/* line 130, ../sass/components/thr.scss */
+/* line 161, ../sass/components/thr.scss */
 .views-row img {
   float: left;
   border: solid 1px;
   margin-left: 5px;
 }
 
-/* line 136, ../sass/components/thr.scss */
+/* line 167, ../sass/components/thr.scss */
 .views-row .field-content {
   /*padding-left: 23%;*/
 }
 
-/* line 140, ../sass/components/thr.scss */
+/* line 171, ../sass/components/thr.scss */
 .newsitem {
   width: 1000px;
   margin-left: auto;
@@ -1869,7 +1895,7 @@ div.blurb {
   /*border: solid 1px;*/
 }
 
-/* line 149, ../sass/components/thr.scss */
+/* line 180, ../sass/components/thr.scss */
 .newsitem .views-field-title {
   margin-left: 43%;
   font-size: larger;
@@ -1877,33 +1903,33 @@ div.blurb {
   padding-top: 5px;
 }
 
-/* line 156, ../sass/components/thr.scss */
+/* line 187, ../sass/components/thr.scss */
 .newsitem .views-field-body {
   padding-left: 23%;
 }
 
-/* line 160, ../sass/components/thr.scss */
+/* line 191, ../sass/components/thr.scss */
 .newsitem .views-field-view-node {
   padding-left: 23%;
 }
 
-/* line 164, ../sass/components/thr.scss */
+/* line 195, ../sass/components/thr.scss */
 #about-us {
   font-family: Sans-serif;
   text-align: justify;
 }
 
-/* line 170, ../sass/components/thr.scss */
+/* line 201, ../sass/components/thr.scss */
 #about-us-top {
   background: #FFFFFF;
 }
 
-/* line 174, ../sass/components/thr.scss */
+/* line 205, ../sass/components/thr.scss */
 #about-us-bottom {
-  background: #EAEAEA;
+  background: #545454;
 }
 
-/* line 178, ../sass/components/thr.scss */
+/* line 209, ../sass/components/thr.scss */
 #about-us-pic {
   display: block;
   width: 200px;
@@ -1913,12 +1939,12 @@ div.blurb {
   margin-right: auto;
 }
 
-/* line 187, ../sass/components/thr.scss */
+/* line 218, ../sass/components/thr.scss */
 #about-us-bottom h1 {
   text-align: center;
 }
 
-/* line 191, ../sass/components/thr.scss */
+/* line 222, ../sass/components/thr.scss */
 #about-us p {
   width: 600px;
   font-size: larger;
@@ -1926,9 +1952,9 @@ div.blurb {
   margin-right: auto;
 }
 
-/* line 198, ../sass/components/thr.scss */
+/* line 229, ../sass/components/thr.scss */
 .theme .views-field-name {
-  /* background: #EAEAEA;
+  /* background: $bg-color-light-gray;
    border: solid 1px;
    text-align: center;
    min-width: 300px;
@@ -1936,73 +1962,73 @@ div.blurb {
    padding-bottom: 10px;*/
   position: absolute;
   z-index: 1;
-  background: #EAEAEA;
+  background: #d1d1d1;
   margin-top: 5px;
   margin-left: 5px;
 }
 
-/* line 212, ../sass/components/thr.scss */
+/* line 243, ../sass/components/thr.scss */
 .theme td {
-  /*background: #EAEAEA;
+  /*background: $bg-color-light-gray;
   border: solid 1px;*/
   min-width: 220px;
   min-height: 220px;
   padding: 10px;
 }
 
-/* line 220, ../sass/components/thr.scss */
+/* line 251, ../sass/components/thr.scss */
 .theme img {
   position: relative;
   width: 100%;
   border-radius: 2%;
 }
 
-/* line 226, ../sass/components/thr.scss */
+/* line 257, ../sass/components/thr.scss */
 .theme table {
   margin-left: auto;
   margin-right: auto;
 }
 
-/* line 231, ../sass/components/thr.scss */
+/* line 262, ../sass/components/thr.scss */
 #page-title {
   text-align: center;
 }
 
-/* line 235, ../sass/components/thr.scss */
+/* line 266, ../sass/components/thr.scss */
 .theme a {
   color: black;
 }
 
-/* line 239, ../sass/components/thr.scss */
+/* line 270, ../sass/components/thr.scss */
 .breadcrumb a {
   display: none;
 }
 
-/* line 243, ../sass/components/thr.scss */
+/* line 274, ../sass/components/thr.scss */
 .view-regions table {
   margin-left: auto;
   margin-right: auto;
 }
 
-/* line 248, ../sass/components/thr.scss */
+/* line 279, ../sass/components/thr.scss */
 .view-regions td {
-  /*background: #EAEAEA;
+  /*background: $bg-color-light-gray;
   border: solid 1px;*/
   padding: 25px;
 }
 
-/* line 254, ../sass/components/thr.scss */
+/* line 285, ../sass/components/thr.scss */
 .view-regions h4 {
   text-align: center;
   font-size: larger;
 }
 
-/* line 259, ../sass/components/thr.scss */
+/* line 290, ../sass/components/thr.scss */
 .view-regions a {
   color: #4A90E2;
 }
 
-/* line 263, ../sass/components/thr.scss */
+/* line 294, ../sass/components/thr.scss */
 #start-here {
   background: #FFF;
   margin-left: auto;
@@ -2011,34 +2037,34 @@ div.blurb {
   padding-bottom: 10px;
 }
 
-/* line 271, ../sass/components/thr.scss */
+/* line 302, ../sass/components/thr.scss */
 #syllabi {
   background: #FFF;
   float: left;
   width: 50%;
 }
 
-/* line 277, ../sass/components/thr.scss */
+/* line 308, ../sass/components/thr.scss */
 #student-work {
   background: #FFF;
   float: left;
   width: 50%;
 }
 
-/* line 283, ../sass/components/thr.scss */
+/* line 314, ../sass/components/thr.scss */
 #for-teachers-button {
   background: #4A90E2;
   border-radius: 5%;
   width: 200px;
   margin-left: 25px;
   border-radius: 6px;
-  border: 1px solid #EAEAEA;
+  border: 1px solid #e0e0e0;
   font-weight: bold;
   padding: 6px 24px;
   text-decoration: none;
 }
 
-/* line 295, ../sass/components/thr.scss */
+/* line 326, ../sass/components/thr.scss */
 #for-teachers-class-spaces {
   background: #FFF;
   margin-left: auto;
@@ -2047,19 +2073,19 @@ div.blurb {
   padding-bottom: 10px;
 }
 
-/* line 303, ../sass/components/thr.scss */
+/* line 334, ../sass/components/thr.scss */
 #start-here h1, p, h2 {
   margin-left: 25px;
   margin-top: 25px;
 }
 
-/* line 308, ../sass/components/thr.scss */
+/* line 339, ../sass/components/thr.scss */
 #start-here a {
   color: #4A90E2;
   text-decoration: underline;
 }
 
-/* line 313, ../sass/components/thr.scss */
+/* line 344, ../sass/components/thr.scss */
 #for-teachers-class-spaces h1, p {
   margin-left: 25px;
   margin-top: 25px;
