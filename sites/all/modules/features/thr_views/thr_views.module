@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the THR Views feature.
+ */
+
+include_once 'thr_views.features.inc';

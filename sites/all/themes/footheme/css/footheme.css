@@ -1,0 +1,224 @@
+/**
+ * Footheme footheme.css
+ *
+ * Use this file to add your custom styles.
+ *
+ * You can change the name of this file, just
+ * remember to update the name in the info file
+ * as well.
+ */
+#human-rights-block1 {
+    /*width: 80%;*/
+    /*background: #F2F2F2;*/
+    padding: 10px;
+    overflow: hidden;
+    display: block;
+    margin: auto;
+}
+
+#human-rights-block1 p {
+    font-size: 1.5em;
+}
+
+#human-rights-photo1 {
+    float: left;
+    width: 40%;
+    padding-right: 13px;
+}
+
+
+
+#human-rights-block2 {
+    /*width: 80%;*/
+    /*background: #bdbdbd;*/
+    padding: 10px;
+    overflow: hidden;
+    display: block;
+    margin: auto;
+    border-bottom: #e1e1e1 solid 1px;
+}
+
+#human-rights-block2 p {
+    font-size: 1.5em;
+}
+
+#human-rights-photo2 {
+    width: 40%;
+    float: right;
+    padding-left: 10px;
+}
+
+.footer-credits-block .block-title {
+    display: none;
+}
+
+.what-is-human-rights-block .block-title {
+    text-align: center;
+    border-top: #e1e1e1 solid 1px;
+}
+
+.what-is-human-rights-block h1 {
+  /*text-align: center;*/
+  color: #4a90e2;
+  font-weight: 700;
+  font-family: 'Trebuchet MS';
+  text-transform: uppercase;
+  font-size: 2.5em;
+  border-top: #e1e1e1 solid 1px;
+  padding-bottom: 10px;
+}
+
+.view-news-feed-view .views-field-title {
+    font-size: 2em;
+}
+
+.view-news-feed-view .views-field-body {
+    font-size: 1.5em;
+}
+
+.view-news-feed-view img {
+    float: left;
+    padding-right: 10px;
+}
+
+.view-news-feed-view .views-row {
+    padding-bottom: 5%;
+}
+
+/*give color to page titles across site*/
+#page-title {
+    color: #4a90e2;
+}
+
+/*increase font size for theme names in 'issues' view*/
+.view-issues .views-field-name a {
+    font-size: 1.3em;
+}
+
+/*styling for the 'for teachers' block accessible at 'for teachers'*/
+#for-teachers-start-here {
+    /*background: beige;*/
+    /*border: #e1e1e1 solid 1px;*/
+}
+
+#row {
+    /*background: gray;*/
+}
+
+#syllabi {
+    /*background: white;*/
+    float: left;
+    width: 50%;
+}
+
+#links {
+    /*background: gray;*/
+    float: left;
+    width: 100%;
+    border-bottom: #2e2e2e solid 1px;
+}
+
+#for-teachers h1 {
+    color: #4a90e2;
+    font-size: 2em;
+}
+
+
+#for-teachers p {
+    color: #2e2e2e;
+    font-size: 1.5em;
+}
+
+#class-spaces {
+    padding-top: 100px;
+}
+
+#for-teachers a {
+    text-decoration: underline;
+}
+
+/*styling for button on 'for teachers'*/
+#button {
+   border: 1px solid #0a3c59;
+   background: #4a91e2;
+   background: -webkit-gradient(linear, left top, left bottom, from(#4a91e2), to(#4a91e2));
+   background: -webkit-linear-gradient(top, #4a91e2, #4a91e2);
+   background: -moz-linear-gradient(top, #4a91e2, #4a91e2);
+   background: -ms-linear-gradient(top, #4a91e2, #4a91e2);
+   background: -o-linear-gradient(top, #4a91e2, #4a91e2);
+   background-image: -ms-linear-gradient(top, #4a91e2 0%, #4a91e2 100%);
+   padding: 10.5px 21px;
+   -webkit-border-radius: 6px;
+   -moz-border-radius: 6px;
+   border-radius: 6px;
+   -webkit-box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(255,255,255,0.4) 0 1px 0;
+   -moz-box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(255,255,255,0.4) 0 1px 0;
+   box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(255,255,255,0.4) 0 1px 0;
+   text-shadow: #7ea4bd 0 1px 0;
+   color: #ffffff;
+   font-size: 14px;
+   font-family: helvetica, serif;
+   text-decoration: none;
+   vertical-align: middle;
+   }
+#button:hover {
+   border: 1px solid #0a3c59;
+   text-shadow: #1e4158 0 1px 0;
+   background: #77aeee;
+   background: -webkit-gradient(linear, left top, left bottom, from(#77aeee), to(#77aeee));
+   background: -webkit-linear-gradient(top, #77aeee, #77aeee);
+   background: -moz-linear-gradient(top, #77aeee, #77aeee);
+   background: -ms-linear-gradient(top, #77aeee, #77aeee);
+   background: -o-linear-gradient(top, #77aeee, #77aeee);
+   background-image: -ms-linear-gradient(top, #77aeee 0%, #77aeee 100%);
+   color: #fff;
+   }
+#button:active {
+   text-shadow: #1e4158 0 1px 0;
+   border: 1px solid #0a3c59;
+   background: #65a9d7;
+   background: -webkit-gradient(linear, left top, left bottom, from(#3e779d), to(#77aeee));
+   background: -webkit-linear-gradient(top, #3e779d, #65a9d7);
+   background: -moz-linear-gradient(top, #3e779d, #65a9d7);
+   background: -ms-linear-gradient(top, #3e779d, #65a9d7);
+   background: -o-linear-gradient(top, #3e779d, #65a9d7);
+   background-image: -ms-linear-gradient(top, #3e779d 0%, #65a9d7 100%);
+   color: #fff;
+   }
+
+/*styling for 'about us' page'*/
+#about-us1 {
+    
+}
+
+#about-us2 {
+    background: #eaeaea;
+}
+
+#img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+}
+
+#about-us1 p {
+    font-size: 1.5em;
+    text-align: justify;
+}
+
+#about-us2 p {
+    font-size: 1.5em;
+    text-align: justify;
+}
+
+#about-us2 h1 {
+    text-align: center;
+}
+
+
+
