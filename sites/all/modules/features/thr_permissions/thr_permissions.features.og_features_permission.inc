@@ -33,94 +33,47 @@ function thr_permissions_og_features_default_permissions() {
 
   // Exported og permission: 'node:course:create assignment content'
   $permissions['node:course:create assignment content'] = array(
-    'roles' => array(
-      'administrator member' => 'administrator member',
-      'member' => 'member',
-    ),
-  );
-
-  // Exported og permission: 'node:course:create blog content'
-  $permissions['node:course:create blog content'] = array(
-    'roles' => array(
-      'administrator member' => 'administrator member',
-      'member' => 'member',
-    ),
+    'roles' => array(),
   );
 
   // Exported og permission: 'node:course:create syllabus content'
   $permissions['node:course:create syllabus content'] = array(
-    'roles' => array(
-      'administrator member' => 'administrator member',
-      'member' => 'member',
-    ),
+    'roles' => array(),
   );
 
   // Exported og permission: 'node:course:create wiki_page content'
   $permissions['node:course:create wiki_page content'] = array(
-    'roles' => array(
-      'administrator member' => 'administrator member',
-      'member' => 'member',
-    ),
+    'roles' => array(),
   );
 
   // Exported og permission: 'node:course:delete any assignment content'
   $permissions['node:course:delete any assignment content'] = array(
-    'roles' => array(
-      'administrator member' => 'administrator member',
-    ),
-  );
-
-  // Exported og permission: 'node:course:delete any blog content'
-  $permissions['node:course:delete any blog content'] = array(
-    'roles' => array(
-      'administrator member' => 'administrator member',
-    ),
+    'roles' => array(),
   );
 
   // Exported og permission: 'node:course:delete any syllabus content'
   $permissions['node:course:delete any syllabus content'] = array(
-    'roles' => array(
-      'administrator member' => 'administrator member',
-    ),
+    'roles' => array(),
   );
 
   // Exported og permission: 'node:course:delete any wiki_page content'
   $permissions['node:course:delete any wiki_page content'] = array(
-    'roles' => array(
-      'administrator member' => 'administrator member',
-    ),
+    'roles' => array(),
   );
 
   // Exported og permission: 'node:course:delete own assignment content'
   $permissions['node:course:delete own assignment content'] = array(
-    'roles' => array(
-      'administrator member' => 'administrator member',
-      'member' => 'member',
-    ),
-  );
-
-  // Exported og permission: 'node:course:delete own blog content'
-  $permissions['node:course:delete own blog content'] = array(
-    'roles' => array(
-      'administrator member' => 'administrator member',
-      'member' => 'member',
-    ),
+    'roles' => array(),
   );
 
   // Exported og permission: 'node:course:delete own syllabus content'
   $permissions['node:course:delete own syllabus content'] = array(
-    'roles' => array(
-      'administrator member' => 'administrator member',
-      'member' => 'member',
-    ),
+    'roles' => array(),
   );
 
   // Exported og permission: 'node:course:delete own wiki_page content'
   $permissions['node:course:delete own wiki_page content'] = array(
-    'roles' => array(
-      'administrator member' => 'administrator member',
-      'member' => 'member',
-    ),
+    'roles' => array(),
   );
 
   // Exported og permission: 'node:course:manage members'
@@ -165,30 +118,17 @@ function thr_permissions_og_features_default_permissions() {
 
   // Exported og permission: 'node:course:update any assignment content'
   $permissions['node:course:update any assignment content'] = array(
-    'roles' => array(
-      'administrator member' => 'administrator member',
-    ),
-  );
-
-  // Exported og permission: 'node:course:update any blog content'
-  $permissions['node:course:update any blog content'] = array(
-    'roles' => array(
-      'administrator member' => 'administrator member',
-    ),
+    'roles' => array(),
   );
 
   // Exported og permission: 'node:course:update any syllabus content'
   $permissions['node:course:update any syllabus content'] = array(
-    'roles' => array(
-      'administrator member' => 'administrator member',
-    ),
+    'roles' => array(),
   );
 
   // Exported og permission: 'node:course:update any wiki_page content'
   $permissions['node:course:update any wiki_page content'] = array(
-    'roles' => array(
-      'administrator member' => 'administrator member',
-    ),
+    'roles' => array(),
   );
 
   // Exported og permission: 'node:course:update group'
@@ -200,34 +140,17 @@ function thr_permissions_og_features_default_permissions() {
 
   // Exported og permission: 'node:course:update own assignment content'
   $permissions['node:course:update own assignment content'] = array(
-    'roles' => array(
-      'administrator member' => 'administrator member',
-      'member' => 'member',
-    ),
-  );
-
-  // Exported og permission: 'node:course:update own blog content'
-  $permissions['node:course:update own blog content'] = array(
-    'roles' => array(
-      'administrator member' => 'administrator member',
-      'member' => 'member',
-    ),
+    'roles' => array(),
   );
 
   // Exported og permission: 'node:course:update own syllabus content'
   $permissions['node:course:update own syllabus content'] = array(
-    'roles' => array(
-      'administrator member' => 'administrator member',
-      'member' => 'member',
-    ),
+    'roles' => array(),
   );
 
   // Exported og permission: 'node:course:update own wiki_page content'
   $permissions['node:course:update own wiki_page content'] = array(
-    'roles' => array(
-      'administrator member' => 'administrator member',
-      'member' => 'member',
-    ),
+    'roles' => array(),
   );
 
   return $permissions;

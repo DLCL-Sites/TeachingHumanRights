@@ -1,0 +1,16 @@
+name = THR Menu
+core = 7.x
+package = Human Rights
+version = 7.x-1.0
+project = thr_menu
+dependencies[] = features
+dependencies[] = menu
+features[features_api][] = api:2
+features[menu_custom][] = main-menu
+features[menu_links][] = main-menu_about-us:node/13
+features[menu_links][] = main-menu_for-teachers:for-teachers
+features[menu_links][] = main-menu_home:<front>
+features[menu_links][] = main-menu_issues:issues
+features[menu_links][] = main-menu_log-in:user/login
+features[menu_links][] = main-menu_news-feed:news-feed
+project path = sites/all/modules/features

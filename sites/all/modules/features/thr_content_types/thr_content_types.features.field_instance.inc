@@ -462,6 +462,7 @@ function thr_content_types_field_default_field_instances() {
   // Exported field_instance: 'node-course-field_dates'
   $field_instances['node-course-field_dates'] = array(
     'bundle' => 'course',
+    'default_value' => NULL,
     'deleted' => 0,
     'description' => 'Course start and end dates',
     'display' => array(
@@ -508,7 +509,7 @@ function thr_content_types_field_default_field_instances() {
         'text_parts' => array(),
         'year_range' => '-3:+3',
       ),
-      'type' => 'date_popup',
+      'type' => 'date_select',
       'weight' => 2,
     ),
   );
@@ -920,6 +921,7 @@ function thr_content_types_field_default_field_instances() {
   // Exported field_instance: 'node-news-field_news_date'
   $field_instances['node-news-field_news_date'] = array(
     'bundle' => 'news',
+    'default_value' => NULL,
     'deleted' => 0,
     'description' => 'The date this news was published',
     'display' => array(
@@ -966,7 +968,7 @@ function thr_content_types_field_default_field_instances() {
         'text_parts' => array(),
         'year_range' => '-3:+3',
       ),
-      'type' => 'date_popup',
+      'type' => 'date_select',
       'weight' => 4,
     ),
   );
@@ -1998,28 +2000,32 @@ function thr_content_types_field_default_field_instances() {
   $field_instances['taxonomy_term-topic-field_image'] = array(
     'bundle' => 'topic',
     'deleted' => 0,
-    'description' => '',
+    'description' => 'Upload an image to represent this theme on the issues page. Please try to avoid colors that will clash with the site design.',
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 1,
+        'module' => 'image',
+        'settings' => array(
+          'image_link' => '',
+          'image_style' => '',
+        ),
+        'type' => 'image',
+        'weight' => 0,
       ),
     ),
     'entity_type' => 'taxonomy_term',
     'field_name' => 'field_image',
     'label' => 'Image',
-    'required' => 0,
+    'required' => 1,
     'settings' => array(
-      'alt_field' => 0,
-      'default_image' => 0,
+      'alt_field' => 1,
+      'default_image' => 22,
       'file_directory' => '',
       'file_extensions' => 'png gif jpg jpeg',
       'max_filesize' => '',
       'max_resolution' => '',
       'min_resolution' => '',
-      'title_field' => 0,
+      'title_field' => 1,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -2030,7 +2036,7 @@ function thr_content_types_field_default_field_instances() {
         'progress_indicator' => 'throbber',
       ),
       'type' => 'image_image',
-      'weight' => 1,
+      'weight' => 32,
     ),
   );
 
@@ -2072,6 +2078,7 @@ function thr_content_types_field_default_field_instances() {
   t('University');
   t('University Affiliation');
   t('Upload a file');
+  t('Upload an image to represent this theme on the issues page. Please try to avoid colors that will clash with the site design.');
   t('What type of assignment is this submission?');
   t('What type of resource are you adding?');
   t('Who are the instructors for this course?');
