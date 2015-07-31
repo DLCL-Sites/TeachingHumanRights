@@ -83,6 +83,7 @@ function thr_permissions_user_default_permissions() {
   $permissions['access content'] = array(
     'name' => 'access content',
     'roles' => array(
+      'Content Manager' => 'Content Manager',
       'administrator' => 'administrator',
       'anonymous user' => 'anonymous user',
       'authenticated user' => 'authenticated user',
@@ -94,6 +95,7 @@ function thr_permissions_user_default_permissions() {
   $permissions['access content overview'] = array(
     'name' => 'access content overview',
     'roles' => array(
+      'Content Manager' => 'Content Manager',
       'administrator' => 'administrator',
       'authenticated user' => 'authenticated user',
     ),
@@ -136,6 +138,15 @@ function thr_permissions_user_default_permissions() {
       'authenticated user' => 'authenticated user',
     ),
     'module' => 'notify',
+  );
+
+  // Exported permission: 'access overlay'.
+  $permissions['access overlay'] = array(
+    'name' => 'access overlay',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'overlay',
   );
 
   // Exported permission: 'access own authorizations'.
@@ -332,6 +343,15 @@ function thr_permissions_user_default_permissions() {
     'module' => 'filter',
   );
 
+  // Exported permission: 'administer flexslider'.
+  $permissions['administer flexslider'] = array(
+    'name' => 'administer flexslider',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'flexslider',
+  );
+
   // Exported permission: 'administer forums'.
   $permissions['administer forums'] = array(
     'name' => 'administer forums',
@@ -471,6 +491,15 @@ function thr_permissions_user_default_permissions() {
       'administrator' => 'administrator',
     ),
     'module' => 'panels',
+  );
+
+  // Exported permission: 'administer panel-nodes'.
+  $permissions['administer panel-nodes'] = array(
+    'name' => 'administer panel-nodes',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'panels_node',
   );
 
   // Exported permission: 'administer panels layouts'.
@@ -721,6 +750,7 @@ function thr_permissions_user_default_permissions() {
   $permissions['create article content'] = array(
     'name' => 'create article content',
     'roles' => array(
+      'Content Manager' => 'Content Manager',
       'administrator' => 'administrator',
     ),
     'module' => 'node',
@@ -749,7 +779,9 @@ function thr_permissions_user_default_permissions() {
   // Exported permission: 'create blog content'.
   $permissions['create blog content'] = array(
     'name' => 'create blog content',
-    'roles' => array(),
+    'roles' => array(
+      'Content Manager' => 'Content Manager',
+    ),
     'module' => 'node',
   );
 
@@ -764,6 +796,13 @@ function thr_permissions_user_default_permissions() {
     'module' => 'node',
   );
 
+  // Exported permission: 'create featured_slider content'.
+  $permissions['create featured_slider content'] = array(
+    'name' => 'create featured_slider content',
+    'roles' => array(),
+    'module' => 'node',
+  );
+
   // Exported permission: 'create forum content'.
   $permissions['create forum content'] = array(
     'name' => 'create forum content',
@@ -773,10 +812,18 @@ function thr_permissions_user_default_permissions() {
     'module' => 'node',
   );
 
+  // Exported permission: 'create images content'.
+  $permissions['create images content'] = array(
+    'name' => 'create images content',
+    'roles' => array(),
+    'module' => 'node',
+  );
+
   // Exported permission: 'create news content'.
   $permissions['create news content'] = array(
     'name' => 'create news content',
     'roles' => array(
+      'Content Manager' => 'Content Manager',
       'administrator' => 'administrator',
       'authenticated user' => 'authenticated user',
     ),
@@ -793,10 +840,27 @@ function thr_permissions_user_default_permissions() {
     'module' => 'node',
   );
 
+  // Exported permission: 'create panel content'.
+  $permissions['create panel content'] = array(
+    'name' => 'create panel content',
+    'roles' => array(),
+    'module' => 'node',
+  );
+
+  // Exported permission: 'create panel-nodes'.
+  $permissions['create panel-nodes'] = array(
+    'name' => 'create panel-nodes',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'panels_node',
+  );
+
   // Exported permission: 'create resource content'.
   $permissions['create resource content'] = array(
     'name' => 'create resource content',
     'roles' => array(
+      'Content Manager' => 'Content Manager',
       'Instructor' => 'Instructor',
       'administrator' => 'administrator',
     ),
@@ -827,6 +891,7 @@ function thr_permissions_user_default_permissions() {
   $permissions['create wiki_page content'] = array(
     'name' => 'create wiki_page content',
     'roles' => array(
+      'Content Manager' => 'Content Manager',
       'authenticated user' => 'authenticated user',
     ),
     'module' => 'node',
@@ -845,6 +910,7 @@ function thr_permissions_user_default_permissions() {
   $permissions['delete any article content'] = array(
     'name' => 'delete any article content',
     'roles' => array(
+      'Content Manager' => 'Content Manager',
       'administrator' => 'administrator',
     ),
     'module' => 'node',
@@ -887,6 +953,13 @@ function thr_permissions_user_default_permissions() {
     'module' => 'node',
   );
 
+  // Exported permission: 'delete any featured_slider content'.
+  $permissions['delete any featured_slider content'] = array(
+    'name' => 'delete any featured_slider content',
+    'roles' => array(),
+    'module' => 'node',
+  );
+
   // Exported permission: 'delete any forum content'.
   $permissions['delete any forum content'] = array(
     'name' => 'delete any forum content',
@@ -894,6 +967,13 @@ function thr_permissions_user_default_permissions() {
       'Content Manager' => 'Content Manager',
       'administrator' => 'administrator',
     ),
+    'module' => 'node',
+  );
+
+  // Exported permission: 'delete any images content'.
+  $permissions['delete any images content'] = array(
+    'name' => 'delete any images content',
+    'roles' => array(),
     'module' => 'node',
   );
 
@@ -917,10 +997,28 @@ function thr_permissions_user_default_permissions() {
     'module' => 'node',
   );
 
+  // Exported permission: 'delete any panel content'.
+  $permissions['delete any panel content'] = array(
+    'name' => 'delete any panel content',
+    'roles' => array(),
+    'module' => 'node',
+  );
+
+  // Exported permission: 'delete any panel-nodes'.
+  $permissions['delete any panel-nodes'] = array(
+    'name' => 'delete any panel-nodes',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'panels_node',
+  );
+
   // Exported permission: 'delete any resource content'.
   $permissions['delete any resource content'] = array(
     'name' => 'delete any resource content',
-    'roles' => array(),
+    'roles' => array(
+      'Content Manager' => 'Content Manager',
+    ),
     'module' => 'node',
   );
 
@@ -938,7 +1036,6 @@ function thr_permissions_user_default_permissions() {
   $permissions['delete any wiki_page content'] = array(
     'name' => 'delete any wiki_page content',
     'roles' => array(
-      'Content Manager' => 'Content Manager',
       'administrator' => 'administrator',
     ),
     'module' => 'node',
@@ -985,7 +1082,9 @@ function thr_permissions_user_default_permissions() {
   // Exported permission: 'delete own blog content'.
   $permissions['delete own blog content'] = array(
     'name' => 'delete own blog content',
-    'roles' => array(),
+    'roles' => array(
+      'Content Manager' => 'Content Manager',
+    ),
     'module' => 'node',
   );
 
@@ -1000,6 +1099,13 @@ function thr_permissions_user_default_permissions() {
     'module' => 'node',
   );
 
+  // Exported permission: 'delete own featured_slider content'.
+  $permissions['delete own featured_slider content'] = array(
+    'name' => 'delete own featured_slider content',
+    'roles' => array(),
+    'module' => 'node',
+  );
+
   // Exported permission: 'delete own forum content'.
   $permissions['delete own forum content'] = array(
     'name' => 'delete own forum content',
@@ -1009,10 +1115,18 @@ function thr_permissions_user_default_permissions() {
     'module' => 'node',
   );
 
+  // Exported permission: 'delete own images content'.
+  $permissions['delete own images content'] = array(
+    'name' => 'delete own images content',
+    'roles' => array(),
+    'module' => 'node',
+  );
+
   // Exported permission: 'delete own news content'.
   $permissions['delete own news content'] = array(
     'name' => 'delete own news content',
     'roles' => array(
+      'Content Manager' => 'Content Manager',
       'authenticated user' => 'authenticated user',
     ),
     'module' => 'node',
@@ -1028,10 +1142,27 @@ function thr_permissions_user_default_permissions() {
     'module' => 'node',
   );
 
+  // Exported permission: 'delete own panel content'.
+  $permissions['delete own panel content'] = array(
+    'name' => 'delete own panel content',
+    'roles' => array(),
+    'module' => 'node',
+  );
+
+  // Exported permission: 'delete own panel-nodes'.
+  $permissions['delete own panel-nodes'] = array(
+    'name' => 'delete own panel-nodes',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'panels_node',
+  );
+
   // Exported permission: 'delete own resource content'.
   $permissions['delete own resource content'] = array(
     'name' => 'delete own resource content',
     'roles' => array(
+      'Content Manager' => 'Content Manager',
       'Instructor' => 'Instructor',
       'administrator' => 'administrator',
     ),
@@ -1151,6 +1282,7 @@ function thr_permissions_user_default_permissions() {
   $permissions['edit any article content'] = array(
     'name' => 'edit any article content',
     'roles' => array(
+      'Content Manager' => 'Content Manager',
       'administrator' => 'administrator',
     ),
     'module' => 'node',
@@ -1193,6 +1325,13 @@ function thr_permissions_user_default_permissions() {
     'module' => 'node',
   );
 
+  // Exported permission: 'edit any featured_slider content'.
+  $permissions['edit any featured_slider content'] = array(
+    'name' => 'edit any featured_slider content',
+    'roles' => array(),
+    'module' => 'node',
+  );
+
   // Exported permission: 'edit any forum content'.
   $permissions['edit any forum content'] = array(
     'name' => 'edit any forum content',
@@ -1200,6 +1339,13 @@ function thr_permissions_user_default_permissions() {
       'Content Manager' => 'Content Manager',
       'administrator' => 'administrator',
     ),
+    'module' => 'node',
+  );
+
+  // Exported permission: 'edit any images content'.
+  $permissions['edit any images content'] = array(
+    'name' => 'edit any images content',
+    'roles' => array(),
     'module' => 'node',
   );
 
@@ -1223,10 +1369,27 @@ function thr_permissions_user_default_permissions() {
     'module' => 'node',
   );
 
+  // Exported permission: 'edit any panel content'.
+  $permissions['edit any panel content'] = array(
+    'name' => 'edit any panel content',
+    'roles' => array(),
+    'module' => 'node',
+  );
+
+  // Exported permission: 'edit any panel-nodes'.
+  $permissions['edit any panel-nodes'] = array(
+    'name' => 'edit any panel-nodes',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'panels_node',
+  );
+
   // Exported permission: 'edit any resource content'.
   $permissions['edit any resource content'] = array(
     'name' => 'edit any resource content',
     'roles' => array(
+      'Content Manager' => 'Content Manager',
       'Instructor' => 'Instructor',
       'administrator' => 'administrator',
     ),
@@ -1284,6 +1447,7 @@ function thr_permissions_user_default_permissions() {
   $permissions['edit own article content'] = array(
     'name' => 'edit own article content',
     'roles' => array(
+      'Content Manager' => 'Content Manager',
       'administrator' => 'administrator',
     ),
     'module' => 'node',
@@ -1312,7 +1476,9 @@ function thr_permissions_user_default_permissions() {
   // Exported permission: 'edit own blog content'.
   $permissions['edit own blog content'] = array(
     'name' => 'edit own blog content',
-    'roles' => array(),
+    'roles' => array(
+      'Content Manager' => 'Content Manager',
+    ),
     'module' => 'node',
   );
 
@@ -1337,6 +1503,13 @@ function thr_permissions_user_default_permissions() {
     'module' => 'node',
   );
 
+  // Exported permission: 'edit own featured_slider content'.
+  $permissions['edit own featured_slider content'] = array(
+    'name' => 'edit own featured_slider content',
+    'roles' => array(),
+    'module' => 'node',
+  );
+
   // Exported permission: 'edit own forum content'.
   $permissions['edit own forum content'] = array(
     'name' => 'edit own forum content',
@@ -1348,10 +1521,18 @@ function thr_permissions_user_default_permissions() {
     'module' => 'node',
   );
 
+  // Exported permission: 'edit own images content'.
+  $permissions['edit own images content'] = array(
+    'name' => 'edit own images content',
+    'roles' => array(),
+    'module' => 'node',
+  );
+
   // Exported permission: 'edit own news content'.
   $permissions['edit own news content'] = array(
     'name' => 'edit own news content',
     'roles' => array(
+      'Content Manager' => 'Content Manager',
       'authenticated user' => 'authenticated user',
     ),
     'module' => 'node',
@@ -1367,10 +1548,28 @@ function thr_permissions_user_default_permissions() {
     'module' => 'node',
   );
 
+  // Exported permission: 'edit own panel content'.
+  $permissions['edit own panel content'] = array(
+    'name' => 'edit own panel content',
+    'roles' => array(),
+    'module' => 'node',
+  );
+
+  // Exported permission: 'edit own panel-nodes'.
+  $permissions['edit own panel-nodes'] = array(
+    'name' => 'edit own panel-nodes',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'panels_node',
+  );
+
   // Exported permission: 'edit own resource content'.
   $permissions['edit own resource content'] = array(
     'name' => 'edit own resource content',
-    'roles' => array(),
+    'roles' => array(
+      'Content Manager' => 'Content Manager',
+    ),
     'module' => 'node',
   );
 
@@ -1389,6 +1588,7 @@ function thr_permissions_user_default_permissions() {
   $permissions['edit own wiki_page content'] = array(
     'name' => 'edit own wiki_page content',
     'roles' => array(
+      'Content Manager' => 'Content Manager',
       'authenticated user' => 'authenticated user',
     ),
     'module' => 'node',

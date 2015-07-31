@@ -25,6 +25,22 @@ function thr_content_types_node_info() {
       'title_label' => t('Title'),
       'help' => '',
     ),
+    'featured_slider' => array(
+      'name' => t('Featured Slider'),
+      'base' => 'node_content',
+      'description' => t('Images for slider'),
+      'has_title' => '1',
+      'title_label' => t('Title'),
+      'help' => '',
+    ),
+    'images' => array(
+      'name' => t('Images'),
+      'base' => 'node_content',
+      'description' => t('Images for use in the site'),
+      'has_title' => '1',
+      'title_label' => t('Title'),
+      'help' => '',
+    ),
     'news' => array(
       'name' => t('News'),
       'base' => 'node_content',
