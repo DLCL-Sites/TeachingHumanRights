@@ -691,11 +691,11 @@ function thr_views_views_default_views() {
   $handler->display->display_options['style_options']['columns'] = '1';
   $handler->display->display_options['style_options']['alignment'] = 'vertical';
   $handler->display->display_options['row_plugin'] = 'fields';
-  /* Field: Broken/missing handler */
+  /* Field: User: Display Name */
   $handler->display->display_options['fields']['field_display_name']['id'] = 'field_display_name';
   $handler->display->display_options['fields']['field_display_name']['table'] = 'field_data_field_display_name';
   $handler->display->display_options['fields']['field_display_name']['field'] = 'field_display_name';
-  /* Sort criterion: Broken/missing handler */
+  /* Sort criterion: User: Display Name (field_display_name) */
   $handler->display->display_options['sorts']['field_display_name_value']['id'] = 'field_display_name_value';
   $handler->display->display_options['sorts']['field_display_name_value']['table'] = 'field_data_field_display_name';
   $handler->display->display_options['sorts']['field_display_name_value']['field'] = 'field_display_name_value';
@@ -760,7 +760,7 @@ function thr_views_views_default_views() {
   $handler->display->display_options['query']['type'] = 'views_query';
   $handler->display->display_options['exposed_form']['type'] = 'basic';
   $handler->display->display_options['pager']['type'] = 'full';
-  $handler->display->display_options['pager']['options']['items_per_page'] = '9';
+  $handler->display->display_options['pager']['options']['items_per_page'] = '16';
   $handler->display->display_options['pager']['options']['offset'] = '0';
   $handler->display->display_options['pager']['options']['id'] = '0';
   $handler->display->display_options['pager']['options']['quantity'] = '9';
@@ -842,16 +842,12 @@ function thr_views_views_default_views() {
   $handler->display->display_options['fields']['title']['label'] = '';
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
-  /* Field: Content: Geolocation */
+  /* Field: Broken/missing handler */
   $handler->display->display_options['fields']['field_geolocation']['id'] = 'field_geolocation';
   $handler->display->display_options['fields']['field_geolocation']['table'] = 'field_data_field_geolocation';
   $handler->display->display_options['fields']['field_geolocation']['field'] = 'field_geolocation';
   $handler->display->display_options['fields']['field_geolocation']['label'] = '';
   $handler->display->display_options['fields']['field_geolocation']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_geolocation']['click_sort_column'] = 'geom';
-  $handler->display->display_options['fields']['field_geolocation']['settings'] = array(
-    'data' => 'full',
-  );
   /* Sort criterion: Content: Post date */
   $handler->display->display_options['sorts']['created']['id'] = 'created';
   $handler->display->display_options['sorts']['created']['table'] = 'node';
@@ -955,6 +951,7 @@ function thr_views_views_default_views() {
 
   /* Display: Master */
   $handler = $view->new_display('default', 'Master', 'default');
+  $handler->display->display_options['title'] = 'In the News';
   $handler->display->display_options['css_class'] = 'thr-news-feed';
   $handler->display->display_options['use_more_always'] = FALSE;
   $handler->display->display_options['access']['type'] = 'perm';
@@ -962,15 +959,12 @@ function thr_views_views_default_views() {
   $handler->display->display_options['query']['type'] = 'views_query';
   $handler->display->display_options['exposed_form']['type'] = 'basic';
   $handler->display->display_options['pager']['type'] = 'full';
-  $handler->display->display_options['pager']['options']['items_per_page'] = '5';
+  $handler->display->display_options['pager']['options']['items_per_page'] = '9';
+  $handler->display->display_options['pager']['options']['offset'] = '0';
+  $handler->display->display_options['pager']['options']['id'] = '0';
+  $handler->display->display_options['pager']['options']['quantity'] = '9';
   $handler->display->display_options['style_plugin'] = 'default';
   $handler->display->display_options['row_plugin'] = 'fields';
-  $handler->display->display_options['row_options']['inline'] = array(
-    'title' => 'title',
-    'body' => 'body',
-    'view_node' => 'view_node',
-    'term_node_tid' => 'term_node_tid',
-  );
   /* Field: Field: Image */
   $handler->display->display_options['fields']['field_image']['id'] = 'field_image';
   $handler->display->display_options['fields']['field_image']['table'] = 'field_data_field_image';
@@ -979,7 +973,7 @@ function thr_views_views_default_views() {
   $handler->display->display_options['fields']['field_image']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_image']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_image']['settings'] = array(
-    'image_style' => 'medium',
+    'image_style' => 'news_feed_image',
     'image_link' => 'content',
   );
   $handler->display->display_options['fields']['field_image']['delta_offset'] = '0';
@@ -990,14 +984,31 @@ function thr_views_views_default_views() {
   $handler->display->display_options['fields']['title']['label'] = '';
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
+  $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
+  /* Field: Content: Path */
+  $handler->display->display_options['fields']['path_1']['id'] = 'path_1';
+  $handler->display->display_options['fields']['path_1']['table'] = 'node';
+  $handler->display->display_options['fields']['path_1']['field'] = 'path';
+  $handler->display->display_options['fields']['path_1']['label'] = '';
+  $handler->display->display_options['fields']['path_1']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['path_1']['element_label_colon'] = FALSE;
   /* Field: Content: Body */
   $handler->display->display_options['fields']['body']['id'] = 'body';
   $handler->display->display_options['fields']['body']['table'] = 'field_data_body';
   $handler->display->display_options['fields']['body']['field'] = 'body';
   $handler->display->display_options['fields']['body']['label'] = '';
   $handler->display->display_options['fields']['body']['alter']['text'] = '[title_1] [body]';
+  $handler->display->display_options['fields']['body']['alter']['max_length'] = '400';
+  $handler->display->display_options['fields']['body']['alter']['more_link'] = TRUE;
+  $handler->display->display_options['fields']['body']['alter']['more_link_text'] = 'Read more';
+  $handler->display->display_options['fields']['body']['alter']['more_link_path'] = '[path_1]';
+  $handler->display->display_options['fields']['body']['alter']['trim'] = TRUE;
   $handler->display->display_options['fields']['body']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['body']['hide_empty'] = TRUE;
+  $handler->display->display_options['fields']['body']['type'] = 'text_plain';
+  $handler->display->display_options['fields']['body']['settings'] = array(
+    'trim_length' => '600',
+  );
   /* Field: Content: All taxonomy terms */
   $handler->display->display_options['fields']['term_node_tid']['id'] = 'term_node_tid';
   $handler->display->display_options['fields']['term_node_tid']['table'] = 'node';
@@ -1023,7 +1034,7 @@ function thr_views_views_default_views() {
   $handler->display->display_options['fields']['path']['field'] = 'path';
   $handler->display->display_options['fields']['path']['label'] = '';
   $handler->display->display_options['fields']['path']['alter']['alter_text'] = TRUE;
-  $handler->display->display_options['fields']['path']['alter']['text'] = '<a href="[path]">Read More</a> <span class="tags">[term_node_tid]</span>';
+  $handler->display->display_options['fields']['path']['alter']['text'] = '<span class="tags">Tags: [term_node_tid]</span>';
   $handler->display->display_options['fields']['path']['element_type'] = 'span';
   $handler->display->display_options['fields']['path']['element_class'] = 'read-more-tags';
   $handler->display->display_options['fields']['path']['element_label_colon'] = FALSE;

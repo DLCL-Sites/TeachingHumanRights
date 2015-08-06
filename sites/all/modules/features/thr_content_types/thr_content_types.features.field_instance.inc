@@ -272,7 +272,9 @@ function thr_content_types_field_default_field_instances() {
     'widget' => array(
       'active' => 1,
       'module' => 'options',
-      'settings' => array(),
+      'settings' => array(
+        'apply_chosen' => '',
+      ),
       'type' => 'options_select',
       'weight' => 6,
     ),
@@ -349,7 +351,9 @@ function thr_content_types_field_default_field_instances() {
     'widget' => array(
       'active' => 1,
       'module' => 'options',
-      'settings' => array(),
+      'settings' => array(
+        'apply_chosen' => '',
+      ),
       'type' => 'options_select',
       'weight' => 7,
     ),
@@ -588,7 +592,9 @@ function thr_content_types_field_default_field_instances() {
     'widget' => array(
       'active' => 1,
       'module' => 'options',
-      'settings' => array(),
+      'settings' => array(
+        'apply_chosen' => '',
+      ),
       'type' => 'options_select',
       'weight' => 7,
     ),
@@ -665,7 +671,9 @@ function thr_content_types_field_default_field_instances() {
     'widget' => array(
       'active' => 1,
       'module' => 'options',
-      'settings' => array(),
+      'settings' => array(
+        'apply_chosen' => '',
+      ),
       'type' => 'options_select',
       'weight' => 5,
     ),
@@ -1163,6 +1171,43 @@ function thr_content_types_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-news-field_issues'
+  $field_instances['node-news-field_issues'] = array(
+    'bundle' => 'news',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'taxonomy',
+        'settings' => array(),
+        'type' => 'taxonomy_term_reference_link',
+        'weight' => 7,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_issues',
+    'label' => 'Issues',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_buttons',
+      'weight' => 9,
+    ),
+  );
+
   // Exported field_instance: 'node-news-field_news_date'
   $field_instances['node-news-field_news_date'] = array(
     'bundle' => 'news',
@@ -1305,7 +1350,9 @@ function thr_content_types_field_default_field_instances() {
     'widget' => array(
       'active' => 1,
       'module' => 'options',
-      'settings' => array(),
+      'settings' => array(
+        'apply_chosen' => '',
+      ),
       'type' => 'options_select',
       'weight' => 7,
     ),
@@ -1482,7 +1529,9 @@ function thr_content_types_field_default_field_instances() {
     'widget' => array(
       'active' => 1,
       'module' => 'options',
-      'settings' => array(),
+      'settings' => array(
+        'apply_chosen' => '',
+      ),
       'type' => 'options_select',
       'weight' => 6,
     ),
@@ -1519,7 +1568,9 @@ function thr_content_types_field_default_field_instances() {
     'widget' => array(
       'active' => 1,
       'module' => 'options',
-      'settings' => array(),
+      'settings' => array(
+        'apply_chosen' => '',
+      ),
       'type' => 'options_select',
       'weight' => 7,
     ),
@@ -1556,7 +1607,9 @@ function thr_content_types_field_default_field_instances() {
     'widget' => array(
       'active' => 1,
       'module' => 'options',
-      'settings' => array(),
+      'settings' => array(
+        'apply_chosen' => '',
+      ),
       'type' => 'options_select',
       'weight' => 3,
     ),
@@ -1734,7 +1787,9 @@ function thr_content_types_field_default_field_instances() {
     'widget' => array(
       'active' => 1,
       'module' => 'options',
-      'settings' => array(),
+      'settings' => array(
+        'apply_chosen' => '',
+      ),
       'type' => 'options_select',
       'weight' => 5,
     ),
@@ -1811,7 +1866,9 @@ function thr_content_types_field_default_field_instances() {
     'widget' => array(
       'active' => 1,
       'module' => 'options',
-      'settings' => array(),
+      'settings' => array(
+        'apply_chosen' => '',
+      ),
       'type' => 'options_select',
       'weight' => 6,
     ),
@@ -2050,7 +2107,9 @@ function thr_content_types_field_default_field_instances() {
     'widget' => array(
       'active' => 1,
       'module' => 'options',
-      'settings' => array(),
+      'settings' => array(
+        'apply_chosen' => '',
+      ),
       'type' => 'options_select',
       'weight' => 3,
     ),
@@ -2201,6 +2260,50 @@ function thr_content_types_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'taxonomy_term-issues-field_image'
+  $field_instances['taxonomy_term-issues-field_image'] = array(
+    'bundle' => 'issues',
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'image',
+        'settings' => array(
+          'image_link' => '',
+          'image_style' => '',
+        ),
+        'type' => 'image',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'taxonomy_term',
+    'field_name' => 'field_image',
+    'label' => 'Image',
+    'required' => 1,
+    'settings' => array(
+      'alt_field' => 0,
+      'default_image' => 0,
+      'file_directory' => '',
+      'file_extensions' => 'png gif jpg jpeg',
+      'max_filesize' => '',
+      'max_resolution' => '',
+      'min_resolution' => '',
+      'title_field' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'image',
+      'settings' => array(
+        'preview_image_style' => 'medium',
+        'progress_indicator' => 'throbber',
+      ),
+      'type' => 'image_image',
+      'weight' => 1,
+    ),
+  );
+
   // Exported field_instance: 'taxonomy_term-regions-field_image'
   $field_instances['taxonomy_term-regions-field_image'] = array(
     'bundle' => 'regions',
@@ -2245,7 +2348,7 @@ function thr_content_types_field_default_field_instances() {
   $field_instances['taxonomy_term-topic-field_image'] = array(
     'bundle' => 'topic',
     'deleted' => 0,
-    'description' => 'Upload an image to represent this theme on the issues page. Please try to avoid colors that will clash with the site design.',
+    'description' => 'Upload an image to represent this theme on the issues page. ',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -2264,7 +2367,7 @@ function thr_content_types_field_default_field_instances() {
     'required' => 1,
     'settings' => array(
       'alt_field' => 1,
-      'default_image' => 22,
+      'default_image' => 0,
       'file_directory' => '',
       'file_extensions' => 'png gif jpg jpeg',
       'max_filesize' => '',
@@ -2308,6 +2411,7 @@ function thr_content_types_field_default_field_instances() {
   t('If this wiki page is for a specific course, indicate that here.');
   t('Image');
   t('Instructor(s)');
+  t('Issues');
   t('Links');
   t('Media');
   t('Original Source');
@@ -2325,7 +2429,7 @@ function thr_content_types_field_default_field_instances() {
   t('University');
   t('University Affiliation');
   t('Upload a file');
-  t('Upload an image to represent this theme on the issues page. Please try to avoid colors that will clash with the site design.');
+  t('Upload an image to represent this theme on the issues page. ');
   t('What type of assignment is this submission?');
   t('What type of resource are you adding?');
   t('Who are the instructors for this course?');

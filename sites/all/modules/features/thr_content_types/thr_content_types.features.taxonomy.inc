@@ -32,6 +32,29 @@ function thr_content_types_taxonomy_default_vocabularies() {
         ),
       ),
     ),
+    'issues' => array(
+      'name' => 'Issues',
+      'machine_name' => 'issues',
+      'description' => '',
+      'hierarchy' => 0,
+      'module' => 'taxonomy',
+      'weight' => 0,
+      'rdf_mapping' => array(
+        'rdftype' => array(
+          0 => 'skos:ConceptScheme',
+        ),
+        'name' => array(
+          'predicates' => array(
+            0 => 'dc:title',
+          ),
+        ),
+        'description' => array(
+          'predicates' => array(
+            0 => 'rdfs:comment',
+          ),
+        ),
+      ),
+    ),
     'regions' => array(
       'name' => 'Regions',
       'machine_name' => 'regions',
