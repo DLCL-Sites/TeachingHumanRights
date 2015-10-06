@@ -274,6 +274,7 @@ function thr_permissions_user_default_permissions() {
   $permissions['administer blocks'] = array(
     'name' => 'administer blocks',
     'roles' => array(
+      'Content Manager' => 'Content Manager',
       'administrator' => 'administrator',
     ),
     'module' => 'block',
@@ -781,6 +782,7 @@ function thr_permissions_user_default_permissions() {
     'name' => 'create blog content',
     'roles' => array(
       'Content Manager' => 'Content Manager',
+      'authenticated user' => 'authenticated user',
     ),
     'module' => 'node',
   );
@@ -862,6 +864,7 @@ function thr_permissions_user_default_permissions() {
     'roles' => array(
       'Content Manager' => 'Content Manager',
       'Instructor' => 'Instructor',
+      'Student' => 'Student',
       'administrator' => 'administrator',
     ),
     'module' => 'node',
@@ -892,7 +895,6 @@ function thr_permissions_user_default_permissions() {
     'name' => 'create wiki_page content',
     'roles' => array(
       'Content Manager' => 'Content Manager',
-      'authenticated user' => 'authenticated user',
     ),
     'module' => 'node',
   );
@@ -939,7 +941,9 @@ function thr_permissions_user_default_permissions() {
   // Exported permission: 'delete any blog content'.
   $permissions['delete any blog content'] = array(
     'name' => 'delete any blog content',
-    'roles' => array(),
+    'roles' => array(
+      'Content Manager' => 'Content Manager',
+    ),
     'module' => 'node',
   );
 
@@ -1084,6 +1088,7 @@ function thr_permissions_user_default_permissions() {
     'name' => 'delete own blog content',
     'roles' => array(
       'Content Manager' => 'Content Manager',
+      'authenticated user' => 'authenticated user',
     ),
     'module' => 'node',
   );
@@ -1164,6 +1169,7 @@ function thr_permissions_user_default_permissions() {
     'roles' => array(
       'Content Manager' => 'Content Manager',
       'Instructor' => 'Instructor',
+      'Student' => 'Student',
       'administrator' => 'administrator',
     ),
     'module' => 'node',
@@ -1311,7 +1317,9 @@ function thr_permissions_user_default_permissions() {
   // Exported permission: 'edit any blog content'.
   $permissions['edit any blog content'] = array(
     'name' => 'edit any blog content',
-    'roles' => array(),
+    'roles' => array(
+      'Content Manager' => 'Content Manager',
+    ),
     'module' => 'node',
   );
 
@@ -1478,6 +1486,7 @@ function thr_permissions_user_default_permissions() {
     'name' => 'edit own blog content',
     'roles' => array(
       'Content Manager' => 'Content Manager',
+      'authenticated user' => 'authenticated user',
     ),
     'module' => 'node',
   );
@@ -1569,6 +1578,7 @@ function thr_permissions_user_default_permissions() {
     'name' => 'edit own resource content',
     'roles' => array(
       'Content Manager' => 'Content Manager',
+      'Student' => 'Student',
     ),
     'module' => 'node',
   );
