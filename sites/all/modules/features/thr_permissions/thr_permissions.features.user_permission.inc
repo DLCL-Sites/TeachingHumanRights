@@ -814,6 +814,16 @@ function thr_permissions_user_default_permissions() {
     'module' => 'node',
   );
 
+  // Exported permission: 'create gallery_image content'.
+  $permissions['create gallery_image content'] = array(
+    'name' => 'create gallery_image content',
+    'roles' => array(
+      'Content Manager' => 'Content Manager',
+      'administrator' => 'administrator',
+    ),
+    'module' => 'node',
+  );
+
   // Exported permission: 'create images content'.
   $permissions['create images content'] = array(
     'name' => 'create images content',
@@ -974,6 +984,16 @@ function thr_permissions_user_default_permissions() {
     'module' => 'node',
   );
 
+  // Exported permission: 'delete any gallery_image content'.
+  $permissions['delete any gallery_image content'] = array(
+    'name' => 'delete any gallery_image content',
+    'roles' => array(
+      'Content Manager' => 'Content Manager',
+      'administrator' => 'administrator',
+    ),
+    'module' => 'node',
+  );
+
   // Exported permission: 'delete any images content'.
   $permissions['delete any images content'] = array(
     'name' => 'delete any images content',
@@ -1116,6 +1136,16 @@ function thr_permissions_user_default_permissions() {
     'name' => 'delete own forum content',
     'roles' => array(
       'authenticated user' => 'authenticated user',
+    ),
+    'module' => 'node',
+  );
+
+  // Exported permission: 'delete own gallery_image content'.
+  $permissions['delete own gallery_image content'] = array(
+    'name' => 'delete own gallery_image content',
+    'roles' => array(
+      'Content Manager' => 'Content Manager',
+      'administrator' => 'administrator',
     ),
     'module' => 'node',
   );
@@ -1350,6 +1380,16 @@ function thr_permissions_user_default_permissions() {
     'module' => 'node',
   );
 
+  // Exported permission: 'edit any gallery_image content'.
+  $permissions['edit any gallery_image content'] = array(
+    'name' => 'edit any gallery_image content',
+    'roles' => array(
+      'Content Manager' => 'Content Manager',
+      'administrator' => 'administrator',
+    ),
+    'module' => 'node',
+  );
+
   // Exported permission: 'edit any images content'.
   $permissions['edit any images content'] = array(
     'name' => 'edit any images content',
@@ -1526,6 +1566,16 @@ function thr_permissions_user_default_permissions() {
       'Content Manager' => 'Content Manager',
       'administrator' => 'administrator',
       'authenticated user' => 'authenticated user',
+    ),
+    'module' => 'node',
+  );
+
+  // Exported permission: 'edit own gallery_image content'.
+  $permissions['edit own gallery_image content'] = array(
+    'name' => 'edit own gallery_image content',
+    'roles' => array(
+      'Content Manager' => 'Content Manager',
+      'administrator' => 'administrator',
     ),
     'module' => 'node',
   );

@@ -1568,11 +1568,11 @@ function thr_views_views_default_views() {
   $handler->display->display_options['exposed_form']['type'] = 'basic';
   $handler->display->display_options['pager']['type'] = 'some';
   $handler->display->display_options['pager']['options']['items_per_page'] = '10';
-  $handler->display->display_options['style_plugin'] = 'fluid_grid';
-  $handler->display->display_options['style_options']['items_width'] = '400';
-  $handler->display->display_options['style_options']['box_shadow'] = '0';
-  $handler->display->display_options['style_options']['border_radius'] = '0';
-  $handler->display->display_options['row_plugin'] = 'fields';
+  $handler->display->display_options['style_plugin'] = 'juicebox';
+  $handler->display->display_options['style_options']['image_field'] = 'field_image';
+  $handler->display->display_options['style_options']['thumb_field'] = 'field_image';
+  $handler->display->display_options['style_options']['title_field'] = 'title';
+  $handler->display->display_options['style_options']['caption_field'] = 'field_caption';
   /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
@@ -1592,6 +1592,12 @@ function thr_views_views_default_views() {
     'image_link' => '',
   );
   $handler->display->display_options['fields']['field_image']['delta_offset'] = '0';
+  /* Field: Content: Caption */
+  $handler->display->display_options['fields']['field_caption']['id'] = 'field_caption';
+  $handler->display->display_options['fields']['field_caption']['table'] = 'field_data_field_caption';
+  $handler->display->display_options['fields']['field_caption']['field'] = 'field_caption';
+  $handler->display->display_options['fields']['field_caption']['label'] = '';
+  $handler->display->display_options['fields']['field_caption']['element_label_colon'] = FALSE;
   /* Sort criterion: Content: Post date */
   $handler->display->display_options['sorts']['created']['id'] = 'created';
   $handler->display->display_options['sorts']['created']['table'] = 'node';
@@ -1609,7 +1615,7 @@ function thr_views_views_default_views() {
   $handler->display->display_options['filters']['type']['table'] = 'node';
   $handler->display->display_options['filters']['type']['field'] = 'type';
   $handler->display->display_options['filters']['type']['value'] = array(
-    'thr_gallery' => 'thr_gallery',
+    'gallery_image' => 'gallery_image',
   );
 
   /* Display: Page */
