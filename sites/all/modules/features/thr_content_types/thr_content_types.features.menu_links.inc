@@ -10,7 +10,7 @@
 function thr_content_types_menu_default_menu_links() {
   $menu_links = array();
 
-  // Exported menu link: main-menu_gallery:gallery
+  // Exported menu link: main-menu_gallery:gallery.
   $menu_links['main-menu_gallery:gallery'] = array(
     'menu_name' => 'main-menu',
     'link_path' => 'gallery',
