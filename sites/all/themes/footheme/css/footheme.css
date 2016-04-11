@@ -68,20 +68,43 @@
   padding-bottom: 10px;
 }
 
-.view-news-feed-view .views-field-title {
+.view-course-content {
+
+}
+
+.view-news-feed-view .views-field-title,
+.view-course-content .views-field-title-1 {
     font-size: 2em;
 }
 
-.view-news-feed-view .views-field-body {
+.view-news-feed-view .views-field-body,
+.view-course-content .views-field-body  {
     font-size: 1.5em;
 }
 
-.view-news-feed-view img {
+.view-news-feed-view img,
+.view-course-content img  {
     float: left;
     padding-right: 10px;
 }
 
-.view-news-feed-view .views-row {
+.view-course-content .view-grouping-header {
+ font-size: xx-large;
+ font-style: italic;
+}
+
+.view-course-content .views-exposed-widget {
+  width: 100%;
+}
+
+.view-course-content .views-field-field-image img {
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+}
+
+.view-news-feed-view .views-row,
+.view-course-content .views-row  {
     padding-bottom: 5%;
 }
 
@@ -188,7 +211,7 @@
 
 /*styling for 'about us' page'*/
 #about-us1 {
-    
+
 }
 
 #about-us2 {
@@ -220,5 +243,389 @@
     text-align: center;
 }
 
+
+/*styling for home page human rights block*/
+.about-human-rights {
+    width:100%;
+    border: #e1e1e1 solid 1px;
+    border-radius: 5px;
+}
+.block1 {
+    width: 100%;
+    height: auto;
+    border-bottom: #e1e1e1 1px solid;
+    margin: auto;
+    overflow: hidden;
+    white-space: normal;
+    text-overflow: ellipsis;
+    padding-bottom: 10px;
+}
+.image {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 20vh;
+    width: 35%;
+    background: url("http://dev.teachinghumanrights.org/sites/default/files/thr-images/human_rights_first.jpg");
+    background-size: cover;
+    background-position: center;
+    float: left;
+    background-repeat: no-repeat;
+
+}
+
+.text {
+    margin-right: 5%;
+    margin-left: 5%;
+    margin-bottom: 10px;
+}
+
+.text h1 {
+    font-family: "Trebuchet MS", sans-serif;
+    text-transform: uppercase;
+    color: #4a90e2;
+}
+
+.text p {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+}
+
+.block2 {
+    width: 100%;
+    height: auto;
+    margin: auto;
+    overflow: hidden;
+    white-space: normal;
+    text-overflow: ellipsis;
+    padding-bottom: 10px;
+}
+
+.text2 {
+    width: 55%;
+    margin-right: 5%;
+    margin-left: 5%;
+    margin-bottom: 10px;
+}
+
+.text2 h1 {
+     font-family: "Trebuchet MS", sans-serif;
+     color: #4a90e2;
+     text-transform: uppercase;
+}
+
+.text2 p {
+     font-family: Arial, Helvetica, sans-serif;
+     text-align: justify;
+}
+
+.image2 {
+    float: right;
+    height: 20vh;
+    width: 35%;
+    margin-right: 10px;
+    margin-top: 10px;
+    background: url("http://dev.teachinghumanrights.org/sites/default/files/thr-images/human_rights_first.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+/*styling for news feed view*/
+.view-news-feed-view .views-row {
+     padding-bottom: 2% !important;
+     border-bottom: 1px solid #e1e1e1;
+     padding-top: 2%;
+     min-height: 200px;
+}
+
+.view-news-feed-view .views-field-title {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+   font-size: 1.5em !important;
+}
+
+.view-news-feed-view .views-field-body {
+    font-size: 1.3em !important;
+}
+
+.view-news-feed-view .views-field-path {
+    font-weight: bold;
+}
+
+.view-news-feed-view img {
+    border-radius: 10%;
+}
+
+.view-news-feed-view .views-row {
+    max-width: 1050px;
+    margin: auto;
+}
+
+/*styling for issues view*/
+/*override fluid grid background color*/
+.views-fluid-grid-item {
+     background: #fcfcfc !important;
+}
+
+.view-issues a {
+     font-size: 1.1em !important;
+}
+
+li.views-fluid-grid-inline.views-fluid-grid-item:hover {
+     box-shadow: 2px 2px 7px 2px;
+     transition: ease 1s;
+     -webkit-transition: ease 1s;
+}
+
+/*styling for for teachers page*/
+.for-teachers {
+    width: 75%;
+    margin: auto;
+}
+
+.start-here {
+    border: 1px solid #e1e1e1;
+    margin-bottom: 25px;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.syllabi {
+    width:50%;
+    float:left;
+}
+
+.student-work {
+    width: 50%;
+    float:right;
+}
+
+.class-spaces {
+    border: 1px solid #e1e1e1;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+/*styling for about us page*/
+.about-us1 {
+    background: #fff;
+}
+
+.about-us2 {
+    background: #fafafa;
+}
+
+.about-us5 {
+     background: #fafafa;
+}
+
+.about-us2 h1 {
+     text-align: center;
+}
+
+.about-us-image {
+    height: 150px;
+    width: 150px;
+    background: url("http://teachinghumanrights.org/sites/default/files/thr-images/DSCN2849%20copy%202_0.JPG") 36% 18% no-repeat;
+    border-radius: 50%;
+    margin: auto;
+    background-size: 140%;
+}
+
+.about-us-image2 {
+    height: 150px;
+    width: 150px;
+    background: url("http://dev.teachinghumanrights.org/sites/default/files/thr-images/headshot-MacBook%20de%20Malcolm.png") 36% 18% no-repeat;
+    border-radius: 50%;
+    margin: auto;
+    background-size: cover;
+}
+
+.about-us-image3 {
+    height: 150px;
+    width: 150px;
+    background: url("https://www.law.stanford.edu/sites/default/files/imagecache/Small_Image/person/166489/image/slspublic/CavallaroNov2011.png") 36% 18% no-repeat;
+    border-radius: 50%;
+    margin: auto;
+    background-size: cover;
+}
+
+.about-us-image4 {
+    height: 150px;
+    width: 150px;
+    background: url("http://dev.teachinghumanrights.org/sites/default/files/thr-images/hagia%20sophia.jpg") 36% 18% no-repeat;
+    border-radius: 50%;
+    margin: auto;
+    background-size: cover;
+}
+/*main menu styling*/
+.menu li {
+     font-family: Arial, Helvetica, sans-serif;
+     font-size: 0.9em;
+}
+
+.thr-menu-item {
+    background: #fff !important;
+}
+
+.thr-menu-link {
+    color: #4190e2 !important;
+}
+
+a.sf-depth-1.thr-menu-link.active {
+    color: #fff !important;
+}
+
+.thr-menu-link:hover {
+    color: #fff !important;
+}
+
+.nice-menu li {
+    border-bottom: #cccccc 2px solid;
+    border-radius: 6px 6px 0 0;
+    font-family: Helvetica, arial, sans-serif;
+    margin-right: 2px !important;
+}
+
+.nice-menu a {
+     color: #4a90e2 !important;
+}
+
+.nice-menu a:active {
+    background: #77aeee !important;
+    color: #ffffff !important;
+}
+
+.nice-menu a:hover {
+    background: #77aeee !important;
+    color: #ffffff !important;
+    border-radius: 6px 6px 0 0;
+    -webkit-border-radius: 6px 6px 0 0;
+}
+
+
+.nice-menu li.menu-depth-2,
+.nice-menu li.menu-depth-2 a {
+  border-radius: 0 !important;
+  -webkit-border-radius: 0 !important;
+  -moz-border-radius: 0 !important;
+}
+
+.nice-menu li.menu-depth-2 {
+  /*border: 1px solid !important;*/
+}
+
+/*banish breadcrumbs*/
+#breadcrumb {
+    display: none;
+}
+
+/*blog view theming */
+.view-blog-view .node-title {
+    font-family: "Trebuchet MS", sans-serif;
+    text-transform: uppercase;
+}
+
+.view-blog-view .node-title a {
+    color: #4a90e2 !important;
+}
+
+.view-blog-view .user-picture {
+    display: none;
+}
+
+.view-blog-view .node-inner {
+    border-bottom: 1px solid #e2e2e2;
+}
+
+/*remove padding from search-box*/
+.region-header-block {
+    margin-top: none !important;
+}
+
+#search-block-form {
+    margin-top: none !important;
+}
+
+/*theming for blog view*/
+.view-blog-view .views-field-field-image {
+     height: 20vh;
+     overflow: hidden;
+     width: 90%;
+     margin: auto;
+     border-right: 1px solid #e0e0e0;
+}
+
+.view-blog-view img {
+    margin: 0 !important;
+}
+
+.view-blog-view .col-1 .views-field-title {
+    width: 90%;
+    border-right: 1px solid #e0e0e0;
+    padding-top: 15px;
+    margin: auto;
+}
+
+.view-blog-view .col-1 .views-field-body {
+    width: 90%;
+    border-right: 1px solid #e0e0e0;
+    border-bottom: 1px solid #e0e0e0;
+    margin: auto;
+    padding-bottom: 15px;
+}
+
+.view-blog-view .col-1 .views-field-body p {
+    padding-right: 10px;
+}
+
+.view-blog-view .col-2 .views-field-title {
+    width: 90%;
+    padding-top: 15px;
+    border-right: 1px solid #e0e0e0;
+    margin: auto;
+}
+
+.view-blog-view .col-2 .views-field-body {
+    width: 90%;
+    border-bottom: 1px solid #e0e0e0;
+    border-right: solid 1px #e0e0e0;
+    margin: auto;
+    padding-bottom: 15px;
+}
+
+.view-blog-view .col-2 .views-field-body p {
+    padding-right: 10px;
+}
+
+.view-blog-view td:last-child {
+    border-right: none !important;
+}
+
+.view-blog-view td.col-2 {
+    position: relative;
+    top: 75px;
+}
+
+.view-blog-view td {
+     padding-bottom: 25px;
+     max-width: 45vw;
+}
+
+/*theming for individual blog entries*/
+.node-blog .field-name-field-image {
+     height: 40vh;
+     overflow: hidden;
+}
+
+.node-blog .field-name-field-image img {
+     width: 100%;
+     position: relative;
+     top: -100px;
+}
 
 
