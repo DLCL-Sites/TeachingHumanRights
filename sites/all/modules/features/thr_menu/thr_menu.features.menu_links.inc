@@ -10,7 +10,7 @@
 function thr_menu_menu_default_menu_links() {
   $menu_links = array();
 
-  // Exported menu link: main-menu_about-us:node/659
+  // Exported menu link: main-menu_about-us:node/659.
   $menu_links['main-menu_about-us:node/659'] = array(
     'menu_name' => 'main-menu',
     'link_path' => 'node/659',
@@ -27,7 +27,7 @@ function thr_menu_menu_default_menu_links() {
     'weight' => -42,
     'customized' => 1,
   );
-  // Exported menu link: main-menu_blog-posts:blog
+  // Exported menu link: main-menu_blog-posts:blog.
   $menu_links['main-menu_blog-posts:blog'] = array(
     'menu_name' => 'main-menu',
     'link_path' => 'blog',
@@ -44,11 +44,11 @@ function thr_menu_menu_default_menu_links() {
     'external' => 0,
     'has_children' => 0,
     'expanded' => 0,
-    'weight' => -48,
+    'weight' => -47,
     'customized' => 1,
     'parent_identifier' => 'main-menu_resources:<front>',
   );
-  // Exported menu link: main-menu_blog:blog
+  // Exported menu link: main-menu_blog:blog.
   $menu_links['main-menu_blog:blog'] = array(
     'menu_name' => 'main-menu',
     'link_path' => 'blog',
@@ -62,11 +62,47 @@ function thr_menu_menu_default_menu_links() {
     'external' => 0,
     'has_children' => 0,
     'expanded' => 0,
-    'weight' => -49,
+    'weight' => -48,
     'customized' => 1,
     'parent_identifier' => 'main-menu_resources:<front>',
   );
-  // Exported menu link: main-menu_contribute:node/add
+  // Exported menu link: main-menu_by-course:course-content.
+  $menu_links['main-menu_by-course:course-content'] = array(
+    'menu_name' => 'main-menu',
+    'link_path' => 'course-content',
+    'router_path' => 'course-content',
+    'link_title' => 'By Course',
+    'options' => array(
+      'identifier' => 'main-menu_by-course:course-content',
+    ),
+    'module' => 'system',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => -50,
+    'customized' => 1,
+    'parent_identifier' => 'main-menu_resources:<front>',
+  );
+  // Exported menu link: main-menu_collaborators:node/726.
+  $menu_links['main-menu_collaborators:node/726'] = array(
+    'menu_name' => 'main-menu',
+    'link_path' => 'node/726',
+    'router_path' => 'node/%',
+    'link_title' => 'Collaborators',
+    'options' => array(
+      'identifier' => 'main-menu_collaborators:node/726',
+    ),
+    'module' => 'menu',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => 0,
+    'customized' => 0,
+    'parent_identifier' => 'main-menu_about-us:node/659',
+  );
+  // Exported menu link: main-menu_contribute:node/add.
   $menu_links['main-menu_contribute:node/add'] = array(
     'menu_name' => 'main-menu',
     'link_path' => 'node/add',
@@ -86,7 +122,7 @@ function thr_menu_menu_default_menu_links() {
     'weight' => -41,
     'customized' => 1,
   );
-  // Exported menu link: main-menu_for-teachers:node/658
+  // Exported menu link: main-menu_for-teachers:node/658.
   $menu_links['main-menu_for-teachers:node/658'] = array(
     'menu_name' => 'main-menu',
     'link_path' => 'node/658',
@@ -103,7 +139,7 @@ function thr_menu_menu_default_menu_links() {
     'weight' => -40,
     'customized' => 1,
   );
-  // Exported menu link: main-menu_forums:forum
+  // Exported menu link: main-menu_forums:forum.
   $menu_links['main-menu_forums:forum'] = array(
     'menu_name' => 'main-menu',
     'link_path' => 'forum',
@@ -120,11 +156,11 @@ function thr_menu_menu_default_menu_links() {
     'external' => 0,
     'has_children' => 0,
     'expanded' => 0,
-    'weight' => -46,
+    'weight' => -45,
     'customized' => 1,
     'parent_identifier' => 'main-menu_resources:<front>',
   );
-  // Exported menu link: main-menu_gallery:gallery
+  // Exported menu link: main-menu_gallery:gallery.
   $menu_links['main-menu_gallery:gallery'] = array(
     'menu_name' => 'main-menu',
     'link_path' => 'gallery',
@@ -141,7 +177,7 @@ function thr_menu_menu_default_menu_links() {
     'weight' => -39,
     'customized' => 1,
   );
-  // Exported menu link: main-menu_home:<front>
+  // Exported menu link: main-menu_home:<front>.
   $menu_links['main-menu_home:<front>'] = array(
     'menu_name' => 'main-menu',
     'link_path' => '<front>',
@@ -158,7 +194,7 @@ function thr_menu_menu_default_menu_links() {
     'weight' => -50,
     'customized' => 1,
   );
-  // Exported menu link: main-menu_how-to-use-this-site:node/725
+  // Exported menu link: main-menu_how-to-use-this-site:node/725.
   $menu_links['main-menu_how-to-use-this-site:node/725'] = array(
     'menu_name' => 'main-menu',
     'link_path' => 'node/725',
@@ -176,7 +212,7 @@ function thr_menu_menu_default_menu_links() {
     'customized' => 0,
     'parent_identifier' => 'main-menu_contribute:node/add',
   );
-  // Exported menu link: main-menu_issues:issues
+  // Exported menu link: main-menu_issues:issues.
   $menu_links['main-menu_issues:issues'] = array(
     'menu_name' => 'main-menu',
     'link_path' => 'issues',
@@ -193,7 +229,7 @@ function thr_menu_menu_default_menu_links() {
     'weight' => -43,
     'customized' => 1,
   );
-  // Exported menu link: main-menu_log-in:user/login
+  // Exported menu link: main-menu_log-in:user/login.
   $menu_links['main-menu_log-in:user/login'] = array(
     'menu_name' => 'main-menu',
     'link_path' => 'user/login',
@@ -213,7 +249,7 @@ function thr_menu_menu_default_menu_links() {
     'weight' => -38,
     'customized' => 1,
   );
-  // Exported menu link: main-menu_news-feed:news-feed
+  // Exported menu link: main-menu_news-feed:news-feed.
   $menu_links['main-menu_news-feed:news-feed'] = array(
     'menu_name' => 'main-menu',
     'link_path' => 'news-feed',
@@ -227,7 +263,45 @@ function thr_menu_menu_default_menu_links() {
     'external' => 0,
     'has_children' => 0,
     'expanded' => 0,
-    'weight' => -50,
+    'weight' => -49,
+    'customized' => 1,
+    'parent_identifier' => 'main-menu_resources:<front>',
+  );
+  // Exported menu link: main-menu_resources:<front>.
+  $menu_links['main-menu_resources:<front>'] = array(
+    'menu_name' => 'main-menu',
+    'link_path' => '<front>',
+    'router_path' => '',
+    'link_title' => 'Resources',
+    'options' => array(
+      'attributes' => array(
+        'title' => '',
+      ),
+      'identifier' => 'main-menu_resources:<front>',
+    ),
+    'module' => 'menu',
+    'hidden' => 0,
+    'external' => 1,
+    'has_children' => 1,
+    'expanded' => 1,
+    'weight' => -45,
+    'customized' => 1,
+  );
+  // Exported menu link: main-menu_syllabi:syllabi.
+  $menu_links['main-menu_syllabi:syllabi'] = array(
+    'menu_name' => 'main-menu',
+    'link_path' => 'syllabi',
+    'router_path' => 'syllabi',
+    'link_title' => 'Syllabi',
+    'options' => array(
+      'identifier' => 'main-menu_syllabi:syllabi',
+    ),
+    'module' => 'system',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => -46,
     'customized' => 1,
     'parent_identifier' => 'main-menu_resources:<front>',
   );
@@ -237,6 +311,8 @@ function thr_menu_menu_default_menu_links() {
   t('About Us');
   t('Blog');
   t('Blog Posts');
+  t('By Course');
+  t('Collaborators');
   t('Contribute');
   t('For Teachers');
   t('Forums');
@@ -246,6 +322,8 @@ function thr_menu_menu_default_menu_links() {
   t('Issues');
   t('Log In');
   t('News Feed');
+  t('Resources');
+  t('Syllabi');
 
   return $menu_links;
 }
