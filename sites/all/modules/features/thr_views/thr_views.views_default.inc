@@ -1145,13 +1145,32 @@ function thr_views_views_default_views() {
   $handler->display->display_options['header']['area']['table'] = 'views';
   $handler->display->display_options['header']['area']['field'] = 'area';
   $handler->display->display_options['header']['area']['empty'] = TRUE;
-  $handler->display->display_options['header']['area']['content'] = '<center><h2>[field_issues]</h2></center>';
+  $handler->display->display_options['header']['area']['content'] = '[field_issues]
+[field_image_1]';
   $handler->display->display_options['header']['area']['format'] = 'full_html';
   $handler->display->display_options['header']['area']['tokenize'] = TRUE;
   /* Relationship: Content: Author */
   $handler->display->display_options['relationships']['uid']['id'] = 'uid';
   $handler->display->display_options['relationships']['uid']['table'] = 'node';
   $handler->display->display_options['relationships']['uid']['field'] = 'uid';
+  /* Relationship: Content: Issues (field_issues) */
+  $handler->display->display_options['relationships']['field_issues_tid']['id'] = 'field_issues_tid';
+  $handler->display->display_options['relationships']['field_issues_tid']['table'] = 'field_data_field_issues';
+  $handler->display->display_options['relationships']['field_issues_tid']['field'] = 'field_issues_tid';
+  /* Field: Field: Image */
+  $handler->display->display_options['fields']['field_image_1']['id'] = 'field_image_1';
+  $handler->display->display_options['fields']['field_image_1']['table'] = 'field_data_field_image';
+  $handler->display->display_options['fields']['field_image_1']['field'] = 'field_image';
+  $handler->display->display_options['fields']['field_image_1']['relationship'] = 'field_issues_tid';
+  $handler->display->display_options['fields']['field_image_1']['label'] = '';
+  $handler->display->display_options['fields']['field_image_1']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_image_1']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_image_1']['click_sort_column'] = 'fid';
+  $handler->display->display_options['fields']['field_image_1']['settings'] = array(
+    'image_style' => 'large',
+    'image_link' => '',
+  );
+  $handler->display->display_options['fields']['field_image_1']['delta_offset'] = '0';
   /* Field: Field: Image */
   $handler->display->display_options['fields']['field_image']['id'] = 'field_image';
   $handler->display->display_options['fields']['field_image']['table'] = 'field_data_field_image';
