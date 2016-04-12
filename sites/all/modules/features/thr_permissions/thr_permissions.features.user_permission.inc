@@ -2018,20 +2018,6 @@ function thr_permissions_user_default_permissions() {
     'module' => 'search',
   );
 
-  // Exported permission: 'use hybridauth'.
-  $permissions['use hybridauth'] = array(
-    'name' => 'use hybridauth',
-    'roles' => array(
-      'Content Manager' => 'Content Manager',
-      'Instructor' => 'Instructor',
-      'Student' => 'Student',
-      'administrator' => 'administrator',
-      'anonymous user' => 'anonymous user',
-      'authenticated user' => 'authenticated user',
-    ),
-    'module' => 'hybridauth',
-  );
-
   // Exported permission: 'use ipe with page manager'.
   $permissions['use ipe with page manager'] = array(
     'name' => 'use ipe with page manager',
