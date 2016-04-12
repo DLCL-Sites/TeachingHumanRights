@@ -41,6 +41,7 @@ features[views_view][] = featured_slider
 features[views_view][] = in_the_news
 features[views_view][] = instructors_list
 features[views_view][] = issues
+features[views_view][] = issues_view
 features[views_view][] = map
 features[views_view][] = news_feed
 features[views_view][] = news_feed_view

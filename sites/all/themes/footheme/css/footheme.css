@@ -73,7 +73,8 @@
 }
 
 .view-news-feed-view .views-field-title,
-.view-course-content .views-field-title-1 {
+.view-course-content .views-field-title-1,
+.view-issues-view .views-field-title {
     font-size: 2em;
 }
 
@@ -83,9 +84,14 @@
 }
 
 .view-news-feed-view img,
-.view-course-content img  {
+.view-course-content img,
+.view-issues-view img  {
     float: left;
     padding-right: 10px;
+}
+
+.view-issues-view div.views-field-created {
+  font-weight: bold;
 }
 
 .view-course-content .view-grouping-header {
@@ -97,7 +103,8 @@
   width: 100%;
 }
 
-.view-course-content .views-field-field-image img {
+.view-course-content .views-field-field-image img,
+.view-issues-view .views-field-field-image img {
   border-radius: 50px;
   -webkit-border-radius: 50px;
   -moz-border-radius: 50px;
@@ -108,15 +115,18 @@
     padding-bottom: 5%;
 }
 
-.view-course-content table.views-view-grid.cols-2 td {
+.view-course-content table.views-view-grid.cols-2 td,
+.view-issues-view table.views-view-grid.cols-2 td {
   width: 45%;
 }
 
-.view-course-content table.views-view-grid.cols-2 td.col-1 {
+.view-course-content table.views-view-grid.cols-2 td.col-1,
+.view-issues-view table.views-view-grid.cols-2 td.col-1 {
   float: left;
 }
 
-.view-course-content table.views-view-grid.cols-2 td.col-2 {
+.view-course-content table.views-view-grid.cols-2 td.col-2,
+.view-issues-view table.views-view-grid.cols-2 td.col-2 {
   float: right;
 }
 
