@@ -68,13 +68,22 @@
   padding-bottom: 10px;
 }
 
+div.view div.item-list-pager {
+  font-size: 2em;
+}
+
+div.view div.item-list-pager ul.pager {
+  text-align: center !important;
+}
+
 .view-course-content {
 
 }
 
 .view-news-feed-view .views-field-title,
 .view-course-content .views-field-title-1,
-.view-issues-view .views-field-title {
+.view-issues-view .views-field-title,
+.view-blog-view .views-field-title {
     font-size: 2em;
 }
 
@@ -85,12 +94,14 @@
 
 .view-news-feed-view img,
 .view-course-content img,
-.view-issues-view img  {
+.view-issues-view img,
+.view-blog-view img  {
     float: left;
     padding-right: 10px;
 }
 
-.view-issues-view div.views-field-created {
+.view-issues-view div.views-field-created,
+.view-blog-view div.views-field-created {
   font-weight: bold;
 }
 
@@ -115,35 +126,63 @@
  font-style: italic;
 }
 
-.view-course-content .views-exposed-widget {
+.view-course-content .views-exposed-widget,
+.view-syllabi .views-exposed-widget {
   width: 100%;
 }
 
+.views-exposed-widget div.description {
+  display: none;
+}
+
 .view-course-content .views-field-field-image img,
-.view-issues-view .views-field-field-image img {
+.view-issues-view .views-field-field-image img,
+.view-blog-view .views-field-field-image img {
   border-radius: 50px;
   -webkit-border-radius: 50px;
   -moz-border-radius: 50px;
 }
 
 .view-news-feed-view .views-row,
-.view-course-content .views-row  {
+.view-course-content .views-row,
+.view-blog-view .blog-row  {
     padding-bottom: 5%;
 }
 
 .view-course-content table.views-view-grid.cols-2 td,
-.view-issues-view table.views-view-grid.cols-2 td {
+.view-issues-view table.views-view-grid.cols-2 td,
+.view-blog-view table.views-view-grid.cols-2 td {
   width: 45%;
 }
 
 .view-course-content table.views-view-grid.cols-2 td.col-1,
-.view-issues-view table.views-view-grid.cols-2 td.col-1 {
+.view-issues-view table.views-view-grid.cols-2 td.col-1,
+.view-blog-view table.views-view-grid.cols-2 td.col-1  {
   float: left;
 }
 
 .view-course-content table.views-view-grid.cols-2 td.col-2,
-.view-issues-view table.views-view-grid.cols-2 td.col-2 {
+.view-issues-view table.views-view-grid.cols-2 td.col-2,
+.view-blog-view table.views-view-grid.cols-2 td.col-2 {
   float: right;
+}
+
+.view-syllabi table.views-table th.views-field-field-display-name {
+  min-width: 200px;
+}
+
+.view-syllabi table.views-table td.views-field-title a {
+  color: #4a90e2;
+  font-size: 1.2em;
+}
+
+.view-syllabi table.views-table th.views-field-field-regions,
+.view-syllabi table.views-table th.views-field-field-issues {
+  width: 200px;
+}
+
+.view-syllabi table.views-table th.views-field-created {
+  width: 80px;
 }
 
 
@@ -563,22 +602,8 @@ a.sf-depth-1.thr-menu-link.active {
     display: none;
 }
 
-/*blog view theming */
-.view-blog-view .node-title {
-    font-family: "Trebuchet MS", sans-serif;
-    text-transform: uppercase;
-}
-
-.view-blog-view .node-title a {
-    color: #4a90e2 !important;
-}
-
 .view-blog-view .user-picture {
     display: none;
-}
-
-.view-blog-view .node-inner {
-    border-bottom: 1px solid #e2e2e2;
 }
 
 /*remove padding from search-box*/
@@ -590,70 +615,7 @@ a.sf-depth-1.thr-menu-link.active {
     margin-top: none !important;
 }
 
-/*theming for blog view*/
-.view-blog-view .views-field-field-image {
-     height: 20vh;
-     overflow: hidden;
-     width: 90%;
-     margin: auto;
-     border-right: 1px solid #e0e0e0;
-}
 
-.view-blog-view img {
-    margin: 0 !important;
-}
-
-.view-blog-view .col-1 .views-field-title {
-    width: 90%;
-    border-right: 1px solid #e0e0e0;
-    padding-top: 15px;
-    margin: auto;
-}
-
-.view-blog-view .col-1 .views-field-body {
-    width: 90%;
-    border-right: 1px solid #e0e0e0;
-    border-bottom: 1px solid #e0e0e0;
-    margin: auto;
-    padding-bottom: 15px;
-}
-
-.view-blog-view .col-1 .views-field-body p {
-    padding-right: 10px;
-}
-
-.view-blog-view .col-2 .views-field-title {
-    width: 90%;
-    padding-top: 15px;
-    border-right: 1px solid #e0e0e0;
-    margin: auto;
-}
-
-.view-blog-view .col-2 .views-field-body {
-    width: 90%;
-    border-bottom: 1px solid #e0e0e0;
-    border-right: solid 1px #e0e0e0;
-    margin: auto;
-    padding-bottom: 15px;
-}
-
-.view-blog-view .col-2 .views-field-body p {
-    padding-right: 10px;
-}
-
-.view-blog-view td:last-child {
-    border-right: none !important;
-}
-
-.view-blog-view td.col-2 {
-    position: relative;
-    top: 75px;
-}
-
-.view-blog-view td {
-     padding-bottom: 25px;
-     max-width: 45vw;
-}
 
 /*theming for individual blog entries*/
 .node-blog .field-name-field-image {
