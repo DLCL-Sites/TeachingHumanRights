@@ -12,7 +12,6 @@ dependencies[] = block_class
 dependencies[] = fpa
 dependencies[] = front_page
 dependencies[] = honeypot
-dependencies[] = hybridauth
 dependencies[] = libraries
 dependencies[] = media
 dependencies[] = media_flickr

@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the THR Login feature.
+ */
+
+include_once 'thr_login.features.inc';
