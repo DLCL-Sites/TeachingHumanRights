@@ -94,6 +94,22 @@
   font-weight: bold;
 }
 
+.view-issues-view .view-header {
+  text-align: center;
+  font-weight: bold;
+  font-size: xx-large;
+}
+
+.view-issues-view .view-header img {
+  padding-bottom: 25px;
+  float: none;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+}
+
 .view-course-content .view-grouping-header {
  font-size: xx-large;
  font-style: italic;
