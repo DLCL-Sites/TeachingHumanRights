@@ -465,7 +465,7 @@ function thr_content_types_strongarm() {
           'weight' => '0',
         ),
         'path' => array(
-          'weight' => '7',
+          'weight' => '8',
         ),
       ),
       'display' => array(),

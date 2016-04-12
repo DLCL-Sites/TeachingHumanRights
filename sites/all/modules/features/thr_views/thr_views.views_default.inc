@@ -229,17 +229,25 @@ function thr_views_views_default_views() {
 
   /* Display: Master */
   $handler = $view->new_display('default', 'Master', 'default');
+  $handler->display->display_options['title'] = 'Blog Posts';
   $handler->display->display_options['use_more_always'] = FALSE;
   $handler->display->display_options['access']['type'] = 'perm';
   $handler->display->display_options['cache']['type'] = 'none';
   $handler->display->display_options['query']['type'] = 'views_query';
   $handler->display->display_options['exposed_form']['type'] = 'basic';
   $handler->display->display_options['pager']['type'] = 'full';
-  $handler->display->display_options['pager']['options']['items_per_page'] = '10';
+  $handler->display->display_options['pager']['options']['items_per_page'] = '8';
+  $handler->display->display_options['pager']['options']['offset'] = '0';
+  $handler->display->display_options['pager']['options']['id'] = '0';
+  $handler->display->display_options['pager']['options']['quantity'] = '9';
   $handler->display->display_options['style_plugin'] = 'grid';
   $handler->display->display_options['style_options']['row_class'] = 'blog-row';
   $handler->display->display_options['style_options']['columns'] = '2';
   $handler->display->display_options['row_plugin'] = 'fields';
+  /* Relationship: Content: Author */
+  $handler->display->display_options['relationships']['uid']['id'] = 'uid';
+  $handler->display->display_options['relationships']['uid']['table'] = 'node';
+  $handler->display->display_options['relationships']['uid']['field'] = 'uid';
   /* Field: Content: Path */
   $handler->display->display_options['fields']['path']['id'] = 'path';
   $handler->display->display_options['fields']['path']['table'] = 'node';
@@ -256,7 +264,7 @@ function thr_views_views_default_views() {
   $handler->display->display_options['fields']['field_image']['hide_empty'] = TRUE;
   $handler->display->display_options['fields']['field_image']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_image']['settings'] = array(
-    'image_style' => '',
+    'image_style' => 'medium',
     'image_link' => 'content',
   );
   $handler->display->display_options['fields']['field_image']['delta_offset'] = '0';
@@ -265,10 +273,28 @@ function thr_views_views_default_views() {
   $handler->display->display_options['fields']['title']['table'] = 'node';
   $handler->display->display_options['fields']['title']['field'] = 'title';
   $handler->display->display_options['fields']['title']['label'] = '';
-  $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
-  $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
+  $handler->display->display_options['fields']['title']['alter']['max_length'] = '60';
   $handler->display->display_options['fields']['title']['alter']['strip_tags'] = TRUE;
+  $handler->display->display_options['fields']['title']['alter']['trim'] = TRUE;
   $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
+  /* Field: User: Display Name */
+  $handler->display->display_options['fields']['field_display_name']['id'] = 'field_display_name';
+  $handler->display->display_options['fields']['field_display_name']['table'] = 'field_data_field_display_name';
+  $handler->display->display_options['fields']['field_display_name']['field'] = 'field_display_name';
+  $handler->display->display_options['fields']['field_display_name']['relationship'] = 'uid';
+  $handler->display->display_options['fields']['field_display_name']['label'] = '';
+  $handler->display->display_options['fields']['field_display_name']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_display_name']['element_label_colon'] = FALSE;
+  /* Field: Content: Post date */
+  $handler->display->display_options['fields']['created']['id'] = 'created';
+  $handler->display->display_options['fields']['created']['table'] = 'node';
+  $handler->display->display_options['fields']['created']['field'] = 'created';
+  $handler->display->display_options['fields']['created']['label'] = '';
+  $handler->display->display_options['fields']['created']['alter']['alter_text'] = TRUE;
+  $handler->display->display_options['fields']['created']['alter']['text'] = 'Posted by [field_display_name]  on [created]';
+  $handler->display->display_options['fields']['created']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['created']['date_format'] = 'short';
+  $handler->display->display_options['fields']['created']['second_date_format'] = 'long';
   /* Field: Content: Body */
   $handler->display->display_options['fields']['body']['id'] = 'body';
   $handler->display->display_options['fields']['body']['table'] = 'field_data_body';
@@ -276,7 +302,7 @@ function thr_views_views_default_views() {
   $handler->display->display_options['fields']['body']['label'] = '';
   $handler->display->display_options['fields']['body']['alter']['max_length'] = '250';
   $handler->display->display_options['fields']['body']['alter']['more_link'] = TRUE;
-  $handler->display->display_options['fields']['body']['alter']['more_link_text'] = 'Read more';
+  $handler->display->display_options['fields']['body']['alter']['more_link_text'] = 'Read More';
   $handler->display->display_options['fields']['body']['alter']['more_link_path'] = '[path]';
   $handler->display->display_options['fields']['body']['alter']['strip_tags'] = TRUE;
   $handler->display->display_options['fields']['body']['alter']['trim'] = TRUE;
@@ -1862,22 +1888,93 @@ function thr_views_views_default_views() {
   /* Display: Master */
   $handler = $view->new_display('default', 'Master', 'default');
   $handler->display->display_options['title'] = 'Syllabi';
+  $handler->display->display_options['use_ajax'] = TRUE;
   $handler->display->display_options['use_more_always'] = FALSE;
   $handler->display->display_options['access']['type'] = 'perm';
   $handler->display->display_options['cache']['type'] = 'none';
   $handler->display->display_options['query']['type'] = 'views_query';
   $handler->display->display_options['exposed_form']['type'] = 'basic';
+  $handler->display->display_options['exposed_form']['options']['autosubmit'] = TRUE;
   $handler->display->display_options['pager']['type'] = 'full';
   $handler->display->display_options['pager']['options']['items_per_page'] = '10';
-  $handler->display->display_options['style_plugin'] = 'default';
-  $handler->display->display_options['row_plugin'] = 'fields';
+  $handler->display->display_options['style_plugin'] = 'table';
+  $handler->display->display_options['style_options']['columns'] = array(
+    'title' => 'title',
+    'field_display_name' => 'field_display_name',
+    'field_issues' => 'field_issues',
+    'field_regions' => 'field_regions',
+    'created' => 'created',
+  );
+  $handler->display->display_options['style_options']['default'] = 'title';
+  $handler->display->display_options['style_options']['info'] = array(
+    'title' => array(
+      'sortable' => 1,
+      'default_sort_order' => 'asc',
+      'align' => '',
+      'separator' => '',
+      'empty_column' => 0,
+    ),
+    'field_display_name' => array(
+      'sortable' => 1,
+      'default_sort_order' => 'asc',
+      'align' => '',
+      'separator' => '',
+      'empty_column' => 0,
+    ),
+    'field_issues' => array(
+      'align' => '',
+      'separator' => '',
+      'empty_column' => 0,
+    ),
+    'field_regions' => array(
+      'align' => '',
+      'separator' => '',
+      'empty_column' => 0,
+    ),
+    'created' => array(
+      'sortable' => 1,
+      'default_sort_order' => 'asc',
+      'align' => '',
+      'separator' => '',
+      'empty_column' => 0,
+    ),
+  );
+  /* Relationship: Entity Reference: Referenced Entity */
+  $handler->display->display_options['relationships']['field_instructors_target_id']['id'] = 'field_instructors_target_id';
+  $handler->display->display_options['relationships']['field_instructors_target_id']['table'] = 'field_data_field_instructors';
+  $handler->display->display_options['relationships']['field_instructors_target_id']['field'] = 'field_instructors_target_id';
   /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
   $handler->display->display_options['fields']['title']['field'] = 'title';
-  $handler->display->display_options['fields']['title']['label'] = '';
+  $handler->display->display_options['fields']['title']['label'] = 'Course Title';
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
+  /* Field: User: Display Name */
+  $handler->display->display_options['fields']['field_display_name']['id'] = 'field_display_name';
+  $handler->display->display_options['fields']['field_display_name']['table'] = 'field_data_field_display_name';
+  $handler->display->display_options['fields']['field_display_name']['field'] = 'field_display_name';
+  $handler->display->display_options['fields']['field_display_name']['relationship'] = 'field_instructors_target_id';
+  $handler->display->display_options['fields']['field_display_name']['label'] = 'Instructors';
+  /* Field: Content: Issues */
+  $handler->display->display_options['fields']['field_issues']['id'] = 'field_issues';
+  $handler->display->display_options['fields']['field_issues']['table'] = 'field_data_field_issues';
+  $handler->display->display_options['fields']['field_issues']['field'] = 'field_issues';
+  $handler->display->display_options['fields']['field_issues']['type'] = 'taxonomy_term_reference_plain';
+  $handler->display->display_options['fields']['field_issues']['delta_offset'] = '0';
+  /* Field: Content: Regions */
+  $handler->display->display_options['fields']['field_regions']['id'] = 'field_regions';
+  $handler->display->display_options['fields']['field_regions']['table'] = 'field_data_field_regions';
+  $handler->display->display_options['fields']['field_regions']['field'] = 'field_regions';
+  $handler->display->display_options['fields']['field_regions']['type'] = 'taxonomy_term_reference_plain';
+  $handler->display->display_options['fields']['field_regions']['delta_offset'] = '0';
+  /* Field: Content: Post date */
+  $handler->display->display_options['fields']['created']['id'] = 'created';
+  $handler->display->display_options['fields']['created']['table'] = 'node';
+  $handler->display->display_options['fields']['created']['field'] = 'created';
+  $handler->display->display_options['fields']['created']['date_format'] = 'custom';
+  $handler->display->display_options['fields']['created']['custom_date_format'] = 'Y-m-d';
+  $handler->display->display_options['fields']['created']['second_date_format'] = 'long';
   /* Sort criterion: Content: Post date */
   $handler->display->display_options['sorts']['created']['id'] = 'created';
   $handler->display->display_options['sorts']['created']['table'] = 'node';
@@ -1897,6 +1994,51 @@ function thr_views_views_default_views() {
   $handler->display->display_options['filters']['type']['value'] = array(
     'syllabus' => 'syllabus',
   );
+  $handler->display->display_options['filters']['type']['group'] = 1;
+  /* Filter criterion: Content: Regions (field_regions) */
+  $handler->display->display_options['filters']['field_regions_tid']['id'] = 'field_regions_tid';
+  $handler->display->display_options['filters']['field_regions_tid']['table'] = 'field_data_field_regions';
+  $handler->display->display_options['filters']['field_regions_tid']['field'] = 'field_regions_tid';
+  $handler->display->display_options['filters']['field_regions_tid']['exposed'] = TRUE;
+  $handler->display->display_options['filters']['field_regions_tid']['expose']['operator_id'] = 'field_regions_tid_op';
+  $handler->display->display_options['filters']['field_regions_tid']['expose']['label'] = 'Limit by regions';
+  $handler->display->display_options['filters']['field_regions_tid']['expose']['operator'] = 'field_regions_tid_op';
+  $handler->display->display_options['filters']['field_regions_tid']['expose']['identifier'] = 'field_regions_tid';
+  $handler->display->display_options['filters']['field_regions_tid']['expose']['multiple'] = TRUE;
+  $handler->display->display_options['filters']['field_regions_tid']['expose']['remember_roles'] = array(
+    2 => '2',
+    1 => 0,
+    3 => 0,
+    4 => 0,
+    5 => 0,
+    6 => 0,
+  );
+  $handler->display->display_options['filters']['field_regions_tid']['reduce_duplicates'] = TRUE;
+  $handler->display->display_options['filters']['field_regions_tid']['type'] = 'select';
+  $handler->display->display_options['filters']['field_regions_tid']['vocabulary'] = 'regions';
+  $handler->display->display_options['filters']['field_regions_tid']['error_message'] = FALSE;
+  /* Filter criterion: Content: Issues (field_issues) */
+  $handler->display->display_options['filters']['field_issues_tid']['id'] = 'field_issues_tid';
+  $handler->display->display_options['filters']['field_issues_tid']['table'] = 'field_data_field_issues';
+  $handler->display->display_options['filters']['field_issues_tid']['field'] = 'field_issues_tid';
+  $handler->display->display_options['filters']['field_issues_tid']['exposed'] = TRUE;
+  $handler->display->display_options['filters']['field_issues_tid']['expose']['operator_id'] = 'field_issues_tid_op';
+  $handler->display->display_options['filters']['field_issues_tid']['expose']['label'] = 'Limit by issues';
+  $handler->display->display_options['filters']['field_issues_tid']['expose']['operator'] = 'field_issues_tid_op';
+  $handler->display->display_options['filters']['field_issues_tid']['expose']['identifier'] = 'field_issues_tid';
+  $handler->display->display_options['filters']['field_issues_tid']['expose']['multiple'] = TRUE;
+  $handler->display->display_options['filters']['field_issues_tid']['expose']['remember_roles'] = array(
+    2 => '2',
+    1 => 0,
+    3 => 0,
+    4 => 0,
+    5 => 0,
+    6 => 0,
+  );
+  $handler->display->display_options['filters']['field_issues_tid']['reduce_duplicates'] = TRUE;
+  $handler->display->display_options['filters']['field_issues_tid']['type'] = 'select';
+  $handler->display->display_options['filters']['field_issues_tid']['vocabulary'] = 'issues';
+  $handler->display->display_options['filters']['field_issues_tid']['error_message'] = FALSE;
 
   /* Display: Page */
   $handler = $view->new_display('page', 'Page', 'page');
