@@ -380,6 +380,23 @@ function thr_content_types_field_default_field_bases() {
     'type' => 'link_field',
   );
 
+  // Exported field_base: 'field_post_quality'.
+  $field_bases['field_post_quality'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_post_quality',
+    'indexes' => array(),
+    'locked' => 0,
+    'module' => 'fivestar',
+    'settings' => array(
+      'axis' => 'quality',
+    ),
+    'translatable' => 0,
+    'type' => 'fivestar',
+  );
+
   // Exported field_base: 'field_region'.
   $field_bases['field_region'] = array(
     'active' => 1,
@@ -657,6 +674,33 @@ function thr_content_types_field_default_field_bases() {
     ),
     'translatable' => 0,
     'type' => 'list_boolean',
+  );
+
+  // Exported field_base: 'group_content_access'.
+  $field_bases['group_content_access'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'group_content_access',
+    'indexes' => array(
+      'value' => array(
+        0 => 'value',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'list',
+    'no_ui' => TRUE,
+    'settings' => array(
+      'allowed_values' => array(
+        0 => 'Use course defaults (private)',
+        1 => 'Public - visible to everyone',
+        2 => 'Semi-Private - visible only to classmates',
+      ),
+      'allowed_values_function' => '',
+    ),
+    'translatable' => 0,
+    'type' => 'list_integer',
   );
 
   // Exported field_base: 'group_group'.
