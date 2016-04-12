@@ -455,6 +455,383 @@ function thr_content_types_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-blog-body'.
+  $field_instances['node-blog-body'] = array(
+    'bundle' => 'blog',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'hidden',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 1,
+      ),
+      'teaser' => array(
+        'label' => 'hidden',
+        'module' => 'text',
+        'settings' => array(
+          'trim_length' => 600,
+        ),
+        'type' => 'text_summary_or_trimmed',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'body',
+    'label' => 'Body',
+    'required' => FALSE,
+    'settings' => array(
+      'display_summary' => TRUE,
+      'text_processing' => 1,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'module' => 'text',
+      'settings' => array(
+        'rows' => 20,
+        'summary_rows' => 5,
+      ),
+      'type' => 'text_textarea_with_summary',
+      'weight' => 1,
+    ),
+  );
+
+  // Exported field_instance: 'node-blog-field_bibliographic_reference'.
+  $field_instances['node-blog-field_bibliographic_reference'] = array(
+    'bundle' => 'blog',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => 'Include links to entries in the collaborative bibliography here.',
+    'display' => array(
+      'default' => array(
+        'label' => 'inline',
+        'module' => 'entityreference',
+        'settings' => array(
+          'link' => FALSE,
+        ),
+        'type' => 'entityreference_label',
+        'weight' => 5,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_bibliographic_reference',
+    'label' => 'Bibliographic Reference',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'entityreference',
+      'settings' => array(
+        'match_operator' => 'CONTAINS',
+        'path' => '',
+        'size' => 60,
+      ),
+      'type' => 'entityreference_autocomplete',
+      'weight' => 7,
+    ),
+  );
+
+  // Exported field_instance: 'node-blog-field_image'.
+  $field_instances['node-blog-field_image'] = array(
+    'bundle' => 'blog',
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'hidden',
+        'module' => 'colorbox',
+        'settings' => array(
+          'colorbox_caption' => 'auto',
+          'colorbox_caption_custom' => '',
+          'colorbox_gallery' => 'post',
+          'colorbox_gallery_custom' => '',
+          'colorbox_image_style' => '',
+          'colorbox_multivalue_index' => NULL,
+          'colorbox_node_style' => 'flexslider_full',
+          'colorbox_node_style_first' => '',
+        ),
+        'type' => 'colorbox',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'hidden',
+        'module' => 'image',
+        'settings' => array(
+          'image_link' => 'content',
+          'image_style' => 'node_teaser',
+        ),
+        'type' => 'image',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_image',
+    'label' => 'Image',
+    'required' => 0,
+    'settings' => array(
+      'alt_field' => 0,
+      'default_image' => 458,
+      'file_directory' => '',
+      'file_extensions' => 'png gif jpg jpeg',
+      'max_filesize' => '',
+      'max_resolution' => '',
+      'min_resolution' => '',
+      'title_field' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'image',
+      'settings' => array(
+        'preview_image_style' => 'thumbnail',
+        'progress_indicator' => 'throbber',
+      ),
+      'type' => 'image_image',
+      'weight' => 2,
+    ),
+  );
+
+  // Exported field_instance: 'node-blog-field_issues'.
+  $field_instances['node-blog-field_issues'] = array(
+    'bundle' => 'blog',
+    'default_value' => array(),
+    'deleted' => 0,
+    'description' => 'Please help us keep our site organized by selecting an issue that this blog entry is associated with.',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'taxonomy',
+        'settings' => array(),
+        'type' => 'taxonomy_term_reference_link',
+        'weight' => 6,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_issues',
+    'label' => 'Issues',
+    'required' => 1,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(
+        'apply_chosen' => '',
+      ),
+      'type' => 'options_select',
+      'weight' => 8,
+    ),
+  );
+
+  // Exported field_instance: 'node-blog-field_post_quality'.
+  $field_instances['node-blog-field_post_quality'] = array(
+    'bundle' => 'blog',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => 'Does this post add substantive value to the conversation?',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 7,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_post_quality',
+    'label' => 'Post Quality',
+    'required' => 0,
+    'settings' => array(
+      'allow_clear' => 1,
+      'allow_ownvote' => 0,
+      'allow_revote' => 1,
+      'stars' => 5,
+      'target' => 'none',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'fivestar',
+      'settings' => array(),
+      'type' => 'exposed',
+      'weight' => 8,
+    ),
+  );
+
+  // Exported field_instance: 'node-blog-field_regions'.
+  $field_instances['node-blog-field_regions'] = array(
+    'bundle' => 'blog',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => 'Which regions of the globe are relevant to your post?',
+    'display' => array(
+      'default' => array(
+        'label' => 'inline',
+        'module' => 'taxonomy',
+        'settings' => array(),
+        'type' => 'taxonomy_term_reference_link',
+        'weight' => 3,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_regions',
+    'label' => 'Regions',
+    'required' => 1,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(
+        'apply_chosen' => '',
+      ),
+      'type' => 'options_select',
+      'weight' => 9,
+    ),
+  );
+
+  // Exported field_instance: 'node-blog-field_topic'.
+  $field_instances['node-blog-field_topic'] = array(
+    'bundle' => 'blog',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => 'Begin typing relevant keywords, then select the appropriate item from the list, if one appears. Otherwise, enter your own keyword(s).',
+    'display' => array(
+      'default' => array(
+        'label' => 'inline',
+        'module' => 'taxonomy',
+        'settings' => array(),
+        'type' => 'taxonomy_term_reference_link',
+        'weight' => 2,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_topic',
+    'label' => 'Keywords',
+    'required' => 1,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'taxonomy',
+      'settings' => array(
+        'autocomplete_path' => 'taxonomy/autocomplete',
+        'size' => 60,
+      ),
+      'type' => 'taxonomy_autocomplete',
+      'weight' => 10,
+    ),
+  );
+
+  // Exported field_instance: 'node-blog-group_content_access'.
+  $field_instances['node-blog-group_content_access'] = array(
+    'bundle' => 'blog',
+    'default_value' => array(
+      0 => array(
+        'value' => 0,
+      ),
+    ),
+    'deleted' => 0,
+    'description' => 'Should your post be public?',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 9,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'group_content_access',
+    'label' => 'Visibility',
+    'required' => 1,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'view modes' => array(
+      'full' => array(
+        'label' => 'above',
+        'type' => 'list_default',
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'type' => 'list_default',
+      ),
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(
+        'apply_chosen' => '',
+      ),
+      'type' => 'options_select',
+      'weight' => 5,
+    ),
+    'widget_type' => 'options_select',
+  );
+
+  // Exported field_instance: 'node-blog-og_group_ref'.
+  $field_instances['node-blog-og_group_ref'] = array(
+    'bundle' => 'blog',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => 'For which course is this entry?',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 8,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'og_group_ref',
+    'label' => 'Course',
+    'required' => 1,
+    'settings' => array(
+      'behaviors' => array(
+        'og_widget' => array(
+          'access_override' => 0,
+          'admin' => array(
+            'widget_type' => 'entityreference_autocomplete',
+          ),
+          'default' => array(
+            'widget_type' => 'options_select',
+          ),
+          'status' => TRUE,
+        ),
+      ),
+      'user_register_form' => FALSE,
+    ),
+    'view modes' => array(
+      'full' => array(
+        'custom settings' => FALSE,
+        'label' => 'Full',
+        'type' => 'og_list_default',
+      ),
+      'teaser' => array(
+        'custom settings' => FALSE,
+        'label' => 'Teaser',
+        'type' => 'og_list_default',
+      ),
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'og',
+      'settings' => array(),
+      'type' => 'og_complex',
+      'weight' => 4,
+    ),
+  );
+
   // Exported field_instance: 'node-course-body'.
   $field_instances['node-course-body'] = array(
     'bundle' => 'course',
@@ -2804,6 +3181,7 @@ function thr_content_types_field_default_field_instances() {
   t('Add an image to represent this type of assignment');
   t('Add an image to serve a thumbnail for this news item.');
   t('Assignment Type');
+  t('Begin typing relevant keywords, then select the appropriate item from the list, if one appears. Otherwise, enter your own keyword(s).');
   t('Bibliographic Reference');
   t('Body');
   t('Caption');
@@ -2814,6 +3192,8 @@ function thr_content_types_field_default_field_instances() {
   t('Description');
   t('Determine if this is an OG group.');
   t('Difficulty');
+  t('Does this post add substantive value to the conversation?');
+  t('For which course is this entry?');
   t('Group');
   t('Group visibility');
   t('Groups audience');
@@ -2821,18 +3201,23 @@ function thr_content_types_field_default_field_instances() {
   t('If this item has a bibliographic entry in the site bibliography, please connect it here.');
   t('If this wiki page is for a specific course, indicate that here.');
   t('Image');
+  t('Include links to entries in the collaborative bibliography here.');
   t('Instructor(s)');
   t('Issues');
+  t('Keywords');
   t('Links');
   t('Media');
   t('Original Source');
   t('Please add a caption to your image.');
   t('Please assign your resource to one of our issues.');
+  t('Please help us keep our site organized by selecting an issue that this blog entry is associated with.');
   t('Please select an Issue to help us categorize your assignment.');
   t('Please select an issue to help us categorize your syllabus.');
+  t('Post Quality');
   t('Region');
   t('Regions');
   t('Select a region with which this resource is associated, if applicable.');
+  t('Should your post be public?');
   t('Slider Image');
   t('Slider Link');
   t('Tags');
@@ -2846,8 +3231,10 @@ function thr_content_types_field_default_field_instances() {
   t('University Affiliation');
   t('Upload a file');
   t('Upload an image to represent this theme on the issues page. ');
+  t('Visibility');
   t('What type of assignment is this submission?');
   t('What type of resource are you adding?');
+  t('Which regions of the globe are relevant to your post?');
   t('Who are the instructors for this course?');
 
   return $field_instances;
