@@ -339,15 +339,8 @@ function thr_views_views_default_views() {
       'rendered' => 1,
       'rendered_strip' => 0,
     ),
-    1 => array(
-      'field' => 'type',
-      'rendered' => 1,
-      'rendered_strip' => 0,
-    ),
   );
-  $handler->display->display_options['style_options']['default_row_class'] = FALSE;
-  $handler->display->display_options['style_options']['row_class_special'] = FALSE;
-  $handler->display->display_options['style_options']['columns'] = '1';
+  $handler->display->display_options['style_options']['columns'] = '2';
   $handler->display->display_options['row_plugin'] = 'fields';
   $handler->display->display_options['row_options']['inline'] = array(
     'title_1' => 'title_1',
@@ -377,6 +370,7 @@ function thr_views_views_default_views() {
   $handler->display->display_options['fields']['field_image']['field'] = 'field_image';
   $handler->display->display_options['fields']['field_image']['label'] = '';
   $handler->display->display_options['fields']['field_image']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_image']['empty'] = '<img src="sites/default/files/styles/medium/public/Save%20the%20World.jpg?itok=n3pldepQ"></img>';
   $handler->display->display_options['fields']['field_image']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_image']['settings'] = array(
     'image_style' => 'medium',
@@ -390,6 +384,8 @@ function thr_views_views_default_views() {
   $handler->display->display_options['fields']['title_1']['table'] = 'node';
   $handler->display->display_options['fields']['title_1']['field'] = 'title';
   $handler->display->display_options['fields']['title_1']['label'] = '';
+  $handler->display->display_options['fields']['title_1']['alter']['max_length'] = '40';
+  $handler->display->display_options['fields']['title_1']['alter']['trim'] = TRUE;
   $handler->display->display_options['fields']['title_1']['element_label_colon'] = FALSE;
   /* Field: User: Display Name */
   $handler->display->display_options['fields']['field_display_name']['id'] = 'field_display_name';
@@ -422,7 +418,7 @@ function thr_views_views_default_views() {
   $handler->display->display_options['fields']['body']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['body']['type'] = 'text_summary_or_trimmed';
   $handler->display->display_options['fields']['body']['settings'] = array(
-    'trim_length' => '900',
+    'trim_length' => '450',
   );
   $handler->display->display_options['fields']['body']['group_columns'] = array(
     'format' => 'format',

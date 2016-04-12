@@ -77,8 +77,8 @@
     font-size: 2em;
 }
 
-.view-news-feed-view .views-field-body,
-.view-course-content .views-field-body  {
+.view-news-feed-view .views-field-body
+{
     font-size: 1.5em;
 }
 
@@ -107,6 +107,19 @@
 .view-course-content .views-row  {
     padding-bottom: 5%;
 }
+
+.view-course-content table.views-view-grid.cols-2 td {
+  width: 45%;
+}
+
+.view-course-content table.views-view-grid.cols-2 td.col-1 {
+  float: left;
+}
+
+.view-course-content table.views-view-grid.cols-2 td.col-2 {
+  float: right;
+}
+
 
 /*give color to page titles across site*/
 #page-title {

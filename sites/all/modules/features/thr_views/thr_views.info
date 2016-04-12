@@ -6,6 +6,7 @@ project = thr_views
 dependencies[] = better_exposed_filters
 dependencies[] = block
 dependencies[] = context
+dependencies[] = entityreference
 dependencies[] = features
 dependencies[] = juicebox
 dependencies[] = leaflet_views
