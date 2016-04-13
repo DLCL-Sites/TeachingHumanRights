@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the THR Join Us feature.
+ */
+
+include_once 'thr_join_us.features.inc';

@@ -1,0 +1,12 @@
+name = THR Join Us
+description = Join Us block
+core = 7.x
+package = Human Rights
+version = 7.x-1.0
+dependencies[] = block
+dependencies[] = context
+dependencies[] = ctools
+features[context][] = join_us
+features[ctools][] = context:context:3
+features[features_api][] = api:2
+project path = sites/all/modules/features
