@@ -238,8 +238,13 @@ div.view div.item-list-pager ul.pager {
     text-decoration: underline;
 }
 
+#join-us {
+  text-align: center;
+  font-weight: bold;
+}
+
 /*styling for button on 'for teachers'*/
-#button {
+#button, .button {
    border: 1px solid #0a3c59;
    background: #4a91e2;
    background: -webkit-gradient(linear, left top, left bottom, from(#4a91e2), to(#4a91e2));
@@ -262,7 +267,7 @@ div.view div.item-list-pager ul.pager {
    text-decoration: none;
    vertical-align: middle;
    }
-#button:hover {
+#button:hover, .button:hover {
    border: 1px solid #0a3c59;
    text-shadow: #1e4158 0 1px 0;
    background: #77aeee;
@@ -274,7 +279,8 @@ div.view div.item-list-pager ul.pager {
    background-image: -ms-linear-gradient(top, #77aeee 0%, #77aeee 100%);
    color: #fff;
    }
-#button:active {
+
+#button:active, .button:active {
    text-shadow: #1e4158 0 1px 0;
    border: 1px solid #0a3c59;
    background: #65a9d7;
