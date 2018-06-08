@@ -1,0 +1,12 @@
+name = THR Appearance
+core = 7.x
+package = Human Rights
+version = 7.x-1.0
+dependencies[] = ctools
+dependencies[] = strongarm
+features[ctools][] = strongarm:strongarm:1
+features[features_api][] = api:2
+features[variable][] = theme_default
+features[variable][] = theme_footheme_files_directory
+features[variable][] = theme_footheme_settings
+project path = sites/all/modules/features

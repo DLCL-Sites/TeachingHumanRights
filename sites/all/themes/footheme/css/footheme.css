@@ -1,0 +1,638 @@
+/**
+ * Footheme footheme.css
+ *
+ * Use this file to add your custom styles.
+ *
+ * You can change the name of this file, just
+ * remember to update the name in the info file
+ * as well.
+ */
+#human-rights-block1 {
+    /*width: 80%;*/
+    /*background: #F2F2F2;*/
+    padding: 10px;
+    overflow: hidden;
+    display: block;
+    margin: auto;
+}
+
+#human-rights-block1 p {
+    font-size: 1.5em;
+}
+
+#human-rights-photo1 {
+    float: left;
+    width: 40%;
+    padding-right: 13px;
+}
+
+
+
+#human-rights-block2 {
+    /*width: 80%;*/
+    /*background: #bdbdbd;*/
+    padding: 10px;
+    overflow: hidden;
+    display: block;
+    margin: auto;
+    border-bottom: #e1e1e1 solid 1px;
+}
+
+#human-rights-block2 p {
+    font-size: 1.5em;
+}
+
+#human-rights-photo2 {
+    width: 40%;
+    float: right;
+    padding-left: 10px;
+}
+
+.footer-credits-block .block-title {
+    display: none;
+}
+
+.what-is-human-rights-block .block-title {
+    text-align: center;
+    border-top: #e1e1e1 solid 1px;
+}
+
+.what-is-human-rights-block h1 {
+  /*text-align: center;*/
+  color: #4a90e2;
+  font-weight: 700;
+  font-family: 'Trebuchet MS';
+  text-transform: uppercase;
+  font-size: 2.5em;
+  border-top: #e1e1e1 solid 1px;
+  padding-bottom: 10px;
+}
+
+div.view div.item-list-pager {
+  font-size: 2em;
+}
+
+div.view div.item-list-pager ul.pager {
+  text-align: center !important;
+}
+
+.view-course-content {
+
+}
+
+.view-news-feed-view .views-field-title,
+.view-course-content .views-field-title-1,
+.view-issues-view .views-field-title,
+.view-blog-view .views-field-title {
+    font-size: 2em;
+}
+
+.view-news-feed-view .views-field-body
+{
+    font-size: 1.5em;
+}
+
+.view-news-feed-view img,
+.view-course-content img,
+.view-issues-view img,
+.view-blog-view img  {
+    float: left;
+    padding-right: 10px;
+}
+
+.view-issues-view div.views-field-created,
+.view-blog-view div.views-field-created {
+  font-weight: bold;
+}
+
+.view-issues-view .view-header {
+  text-align: center;
+  font-weight: bold;
+  font-size: xx-large;
+}
+
+.view-issues-view .view-header img {
+  padding-bottom: 25px;
+  float: none;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+}
+
+.view-course-content .view-grouping-header {
+ font-size: xx-large;
+ font-style: italic;
+}
+
+.view-course-content .views-exposed-widget,
+.view-syllabi .views-exposed-widget {
+  width: 100%;
+}
+
+.views-exposed-widget div.description {
+  display: none;
+}
+
+.view-course-content .views-field-field-image img,
+.view-issues-view .views-field-field-image img,
+.view-blog-view .views-field-field-image img {
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+}
+
+.view-news-feed-view .views-row,
+.view-course-content .views-row,
+.view-blog-view .blog-row  {
+    padding-bottom: 5%;
+}
+
+.view-course-content table.views-view-grid.cols-2 td,
+.view-issues-view table.views-view-grid.cols-2 td,
+.view-blog-view table.views-view-grid.cols-2 td {
+  width: 45%;
+}
+
+.view-course-content table.views-view-grid.cols-2 td.col-1,
+.view-issues-view table.views-view-grid.cols-2 td.col-1,
+.view-blog-view table.views-view-grid.cols-2 td.col-1  {
+  float: left;
+}
+
+.view-course-content table.views-view-grid.cols-2 td.col-2,
+.view-issues-view table.views-view-grid.cols-2 td.col-2,
+.view-blog-view table.views-view-grid.cols-2 td.col-2 {
+  float: right;
+}
+
+.view-syllabi table.views-table th.views-field-field-display-name {
+  min-width: 200px;
+}
+
+.view-syllabi table.views-table td.views-field-title a {
+  color: #4a90e2;
+  font-size: 1.2em;
+}
+
+.view-syllabi table.views-table th.views-field-field-regions,
+.view-syllabi table.views-table th.views-field-field-issues {
+  width: 200px;
+}
+
+.view-syllabi table.views-table th.views-field-created {
+  width: 80px;
+}
+
+
+/*give color to page titles across site*/
+#page-title {
+    color: #4a90e2;
+}
+
+/*increase font size for theme names in 'issues' view*/
+.view-issues .views-field-name a {
+    font-size: 1.3em;
+}
+
+/*styling for the 'for teachers' block accessible at 'for teachers'*/
+#for-teachers-start-here {
+    /*background: beige;*/
+    /*border: #e1e1e1 solid 1px;*/
+}
+
+#row {
+    /*background: gray;*/
+}
+
+#syllabi {
+    /*background: white;*/
+    float: left;
+    width: 50%;
+}
+
+#links {
+    /*background: gray;*/
+    float: left;
+    width: 100%;
+    border-bottom: #2e2e2e solid 1px;
+}
+
+#for-teachers h1 {
+    color: #4a90e2;
+    font-size: 2em;
+}
+
+
+#for-teachers p {
+    color: #2e2e2e;
+    font-size: 1.5em;
+}
+
+#class-spaces {
+    padding-top: 100px;
+}
+
+#for-teachers a {
+    text-decoration: underline;
+}
+
+#join-us {
+  text-align: center;
+  font-weight: bold;
+}
+
+/*styling for button on 'for teachers'*/
+#button, .button {
+   border: 1px solid #0a3c59;
+   background: #4a91e2;
+   background: -webkit-gradient(linear, left top, left bottom, from(#4a91e2), to(#4a91e2));
+   background: -webkit-linear-gradient(top, #4a91e2, #4a91e2);
+   background: -moz-linear-gradient(top, #4a91e2, #4a91e2);
+   background: -ms-linear-gradient(top, #4a91e2, #4a91e2);
+   background: -o-linear-gradient(top, #4a91e2, #4a91e2);
+   background-image: -ms-linear-gradient(top, #4a91e2 0%, #4a91e2 100%);
+   padding: 10.5px 21px;
+   -webkit-border-radius: 6px;
+   -moz-border-radius: 6px;
+   border-radius: 6px;
+   -webkit-box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(255,255,255,0.4) 0 1px 0;
+   -moz-box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(255,255,255,0.4) 0 1px 0;
+   box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(255,255,255,0.4) 0 1px 0;
+   text-shadow: #7ea4bd 0 1px 0;
+   color: #ffffff;
+   font-size: 14px;
+   font-family: helvetica, serif;
+   text-decoration: none;
+   vertical-align: middle;
+   }
+#button:hover, .button:hover {
+   border: 1px solid #0a3c59;
+   text-shadow: #1e4158 0 1px 0;
+   background: #77aeee;
+   background: -webkit-gradient(linear, left top, left bottom, from(#77aeee), to(#77aeee));
+   background: -webkit-linear-gradient(top, #77aeee, #77aeee);
+   background: -moz-linear-gradient(top, #77aeee, #77aeee);
+   background: -ms-linear-gradient(top, #77aeee, #77aeee);
+   background: -o-linear-gradient(top, #77aeee, #77aeee);
+   background-image: -ms-linear-gradient(top, #77aeee 0%, #77aeee 100%);
+   color: #fff;
+   }
+
+#button:active, .button:active {
+   text-shadow: #1e4158 0 1px 0;
+   border: 1px solid #0a3c59;
+   background: #65a9d7;
+   background: -webkit-gradient(linear, left top, left bottom, from(#3e779d), to(#77aeee));
+   background: -webkit-linear-gradient(top, #3e779d, #65a9d7);
+   background: -moz-linear-gradient(top, #3e779d, #65a9d7);
+   background: -ms-linear-gradient(top, #3e779d, #65a9d7);
+   background: -o-linear-gradient(top, #3e779d, #65a9d7);
+   background-image: -ms-linear-gradient(top, #3e779d 0%, #65a9d7 100%);
+   color: #fff;
+   }
+
+/*styling for 'about us' page'*/
+#about-us1 {
+
+}
+
+#about-us2 {
+    background: #eaeaea;
+}
+
+#img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+}
+
+#about-us1 p {
+    font-size: 1.5em;
+    text-align: justify;
+}
+
+#about-us2 p {
+    font-size: 1.5em;
+    text-align: justify;
+}
+
+#about-us2 h1 {
+    text-align: center;
+}
+
+
+/*styling for home page human rights block*/
+.about-human-rights {
+    width:100%;
+    border: #e1e1e1 solid 1px;
+    border-radius: 5px;
+}
+.block1 {
+    width: 100%;
+    height: auto;
+    border-bottom: #e1e1e1 1px solid;
+    margin: auto;
+    overflow: hidden;
+    white-space: normal;
+    text-overflow: ellipsis;
+    padding-bottom: 10px;
+}
+.image {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 20vh;
+    width: 35%;
+    background: url("http://dev.teachinghumanrights.org/sites/default/files/thr-images/human_rights_first.jpg");
+    background-size: cover;
+    background-position: center;
+    float: left;
+    background-repeat: no-repeat;
+
+}
+
+.text {
+    margin-right: 5%;
+    margin-left: 5%;
+    margin-bottom: 10px;
+}
+
+.text h1 {
+    font-family: "Trebuchet MS", sans-serif;
+    text-transform: uppercase;
+    color: #4a90e2;
+}
+
+.text p {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+}
+
+.block2 {
+    width: 100%;
+    height: auto;
+    margin: auto;
+    overflow: hidden;
+    white-space: normal;
+    text-overflow: ellipsis;
+    padding-bottom: 10px;
+}
+
+.text2 {
+    width: 55%;
+    margin-right: 5%;
+    margin-left: 5%;
+    margin-bottom: 10px;
+}
+
+.text2 h1 {
+     font-family: "Trebuchet MS", sans-serif;
+     color: #4a90e2;
+     text-transform: uppercase;
+}
+
+.text2 p {
+     font-family: Arial, Helvetica, sans-serif;
+     text-align: justify;
+}
+
+.image2 {
+    float: right;
+    height: 20vh;
+    width: 35%;
+    margin-right: 10px;
+    margin-top: 10px;
+    background: url("http://dev.teachinghumanrights.org/sites/default/files/thr-images/human_rights_first.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+/*styling for news feed view*/
+.view-news-feed-view .views-row {
+     padding-bottom: 2% !important;
+     border-bottom: 1px solid #e1e1e1;
+     padding-top: 2%;
+     min-height: 200px;
+}
+
+.view-news-feed-view .views-field-title {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+   font-size: 1.5em !important;
+}
+
+.view-news-feed-view .views-field-body {
+    font-size: 1.3em !important;
+}
+
+.view-news-feed-view .views-field-path {
+    font-weight: bold;
+}
+
+.view-news-feed-view img {
+    border-radius: 10%;
+}
+
+.view-news-feed-view .views-row {
+    max-width: 1050px;
+    margin: auto;
+}
+
+/*styling for issues view*/
+/*override fluid grid background color*/
+.views-fluid-grid-item {
+     background: #fcfcfc !important;
+}
+
+.view-issues a {
+     font-size: 1.1em !important;
+}
+
+li.views-fluid-grid-inline.views-fluid-grid-item:hover {
+     box-shadow: 2px 2px 7px 2px;
+     transition: ease 1s;
+     -webkit-transition: ease 1s;
+}
+
+/*styling for for teachers page*/
+.for-teachers {
+    width: 75%;
+    margin: auto;
+}
+
+.start-here {
+    border: 1px solid #e1e1e1;
+    margin-bottom: 25px;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.syllabi {
+    width:50%;
+    float:left;
+}
+
+.student-work {
+    width: 50%;
+    float:right;
+}
+
+.class-spaces {
+    border: 1px solid #e1e1e1;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+/*styling for about us page*/
+.about-us1 {
+    background: #fff;
+}
+
+.about-us2 {
+    background: #fafafa;
+}
+
+.about-us5 {
+     background: #fafafa;
+}
+
+.about-us2 h1 {
+     text-align: center;
+}
+
+.about-us-image {
+    height: 150px;
+    width: 150px;
+    background: url("http://teachinghumanrights.org/sites/default/files/thr-images/DSCN2849%20copy%202_0.JPG") 36% 18% no-repeat;
+    border-radius: 50%;
+    margin: auto;
+    background-size: 140%;
+}
+
+.about-us-image2 {
+    height: 150px;
+    width: 150px;
+    background: url("http://dev.teachinghumanrights.org/sites/default/files/thr-images/headshot-MacBook%20de%20Malcolm.png") 36% 18% no-repeat;
+    border-radius: 50%;
+    margin: auto;
+    background-size: cover;
+}
+
+.about-us-image3 {
+    height: 150px;
+    width: 150px;
+    background: url("https://www.law.stanford.edu/sites/default/files/imagecache/Small_Image/person/166489/image/slspublic/CavallaroNov2011.png") 36% 18% no-repeat;
+    border-radius: 50%;
+    margin: auto;
+    background-size: cover;
+}
+
+.about-us-image4 {
+    height: 150px;
+    width: 150px;
+    background: url("http://dev.teachinghumanrights.org/sites/default/files/thr-images/hagia%20sophia.jpg") 36% 18% no-repeat;
+    border-radius: 50%;
+    margin: auto;
+    background-size: cover;
+}
+/*main menu styling*/
+.menu li {
+     font-family: Arial, Helvetica, sans-serif;
+     font-size: 0.9em;
+}
+
+.thr-menu-item {
+    background: #fff !important;
+}
+
+.thr-menu-link {
+    color: #4190e2 !important;
+}
+
+a.sf-depth-1.thr-menu-link.active {
+    color: #fff !important;
+}
+
+.thr-menu-link:hover {
+    color: #fff !important;
+}
+
+.nice-menu li {
+    border-bottom: #cccccc 2px solid;
+    border-radius: 6px 6px 0 0;
+    font-family: Helvetica, arial, sans-serif;
+    margin-right: 2px !important;
+}
+
+.nice-menu a {
+     color: #4a90e2 !important;
+}
+
+.nice-menu a:active {
+    background: #77aeee !important;
+    color: #ffffff !important;
+}
+
+.nice-menu a:hover {
+    background: #77aeee !important;
+    color: #ffffff !important;
+    border-radius: 6px 6px 0 0;
+    -webkit-border-radius: 6px 6px 0 0;
+}
+
+
+.nice-menu li.menu-depth-2,
+.nice-menu li.menu-depth-2 a {
+  border-radius: 0 !important;
+  -webkit-border-radius: 0 !important;
+  -moz-border-radius: 0 !important;
+}
+
+.nice-menu li.menu-depth-2 {
+  /*border: 1px solid !important;*/
+}
+
+/*banish breadcrumbs*/
+#breadcrumb {
+    display: none;
+}
+
+.view-blog-view .user-picture {
+    display: none;
+}
+
+/*remove padding from search-box*/
+.region-header-block {
+    margin-top: none !important;
+}
+
+#search-block-form {
+    margin-top: none !important;
+}
+
+
+
+/*theming for individual blog entries*/
+.node-blog .field-name-field-image {
+     height: 40vh;
+     overflow: hidden;
+}
+
+.node-blog .field-name-field-image img {
+     width: 100%;
+     position: relative;
+     top: -100px;
+}
+
+
